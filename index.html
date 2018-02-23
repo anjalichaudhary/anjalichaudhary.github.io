@@ -5,12 +5,12 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"6387e82dbf","applicationID":"3081130","transactionName":"IV9dR0RcDghRRk4AEBEfQFtZRA==","queueTime":0,"applicationTime":117,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"6387e82dbf","applicationID":"3081130","transactionName":"IV9dR0RcDghRRk4AEBEfQFtZRA==","queueTime":0,"applicationTime":101,"agent":""}</script>
 <script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="/favicon.ico">
 
-  <title>Anjali Chaudhary - Ruby on Rails developer</title>
+  <title>Anjali Chaudhary - Ruby on Rails developer - VisualCV</title>
   <base href="https://www.visualcv.com/app/">
 
   <meta name="description" content="">
@@ -49,8 +49,21 @@
   <link rel="stylesheet" type="text/css" href="visualcv.css" />
 </head>
 <body data-cv-id="1589285" class="cv-viewer" >
-  <style type="text/css">@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700);
-@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300,700);
+
+  <header class="row centered vcv-header">
+    <div class="col-md-6">
+      <a class="link-home" href="/" target="_blank">
+        <img alt="Vcv blue full" class="vcv-logo" src="/images/logos/vcv_blue_full.png" />
+</a>    </div>
+    <div class="col-md-6 text-right">
+      <a class="btn btn-outline" href="/anjali-chaudhary/pdf" id="pdf-download" rel="nofollow" target="_blank">
+        <i class="fa fa-print"></i>
+        Download PDF
+</a>    </div>
+  </header>
+
+  <style type="text/css">@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400);
 .css-crop {
   width: 100%;
   height: 0;
@@ -464,27 +477,47 @@
 @page {
   size: A4 portrait;
 }
+#ng-app .cv-container {
+  width: 94%;
+}
+.cv-editor .cv-container {
+  max-width: 97% !important;
+}
+.vcv-header,
+.vcv-footer {
+  display: none;
+}
+.vcv-footer time {
+  opacity: 0 !important;
+}
 .cv-container {
-  font-family: "Roboto", "Open Sans", "Century Gothic", CenturyGothic, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, 华文细黑, STXihei, 黑体, SimHei, sans-serif;
+  background-color: #fcfcfc;
+  margin: 0px auto;
+  width: 100%;
+  max-width: initial;
+  font-family: "PT Sans", "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, 华文细黑, STXihei, 黑体, SimHei, sans-serif;
   font-weight: 300;
-  font-size: 15px;
-  background: white;
+  font-size: 17px;
   padding: 0px;
+  color: #666;
+  /*=================================
+=            Timetable            =
+=================================*/
+  /*-----  End of Timetable  ------*/
 }
-.cv-container .cv-content {
-  padding: 3em 0px;
-  margin: 0px;
-  position: relative;
+.cv-container .banner {
+  background-image: url(/themes/verge/images/diagonal-left.png), url(/images/textures/black20.png), url(https://s3.amazonaws.com/workstory/images/verge.jpg);
+  background-color: transparent;
+  background-size: 5px, 5px, cover;
+  background-repeat: repeat, repeat, no-repeat;
+  background-position: center center;
+  box-shadow: 0px -50px 100px 20px rgba(0, 0, 0, 0.5) inset;
+  color: white;
+  padding-top: 175px;
+  padding-bottom: 175px;
 }
-.cv-container .cv-content:before {
-  content: " ";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 33%;
-  height: 100%;
-  background: #425370;
+.cv-container .cv-frame {
+  background: #f6f6f6;
 }
 .cv-container h2,
 .cv-container h3,
@@ -493,326 +526,346 @@
 .cv-container h6,
 .cv-container label {
   margin-top: 0px;
-  margin-bottom: 0.2em;
-  font-weight: 300;
-}
-.cv-container h5 {
-  margin: 0 0 0.2em;
+  margin-bottom: 0.25em;
+  font-weight: 400;
 }
 .cv-container h1,
 .cv-container h3 {
-  font-family: "Roboto Condensed", "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, 华文细黑, STXihei, 黑体, SimHei, sans-serif;
+  font-family: "Oswald", "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, 华文细黑, STXihei, 黑体, SimHei, sans-serif;
 }
 .cv-container h1 {
-  font-size: 225%;
+  font-size: 325%;
   margin: 0px;
-  line-height: 1em;
+  line-height: 75px;
   text-transform: uppercase;
-  font-weight: 200;
-  color: white;
-  text-align: center;
+  font-weight: 300;
   margin-bottom: 0.25em;
 }
 .cv-container h2 {
   font-size: 150%;
   font-style: italic;
-  text-align: center;
 }
 .cv-container h3 {
-  font-weight: 700;
+  font-size: 250%;
+}
+.cv-container h4 {
   font-size: 150%;
 }
-.cv-container h4,
 .cv-container h5 {
   font-weight: 400;
   font-size: 125%;
 }
-.cv-container h5 {
-  color: #555555;
-}
 .cv-container h6 {
-  font-size: 125%;
-  color: #555555;
+  font-family: "Oswald", "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, 华文细黑, STXihei, 黑体, SimHei, sans-serif;
+  font-size: 225%;
 }
 .cv-container strong {
   font-weight: 700;
 }
-.cv-container section {
+.cv-container a {
+  color: #64B1F2;
+}
+.cv-container section[data-table] {
   clear: both;
-  margin-bottom: 2.5em;
-}
-.cv-container section header {
-  width: 100%;
-  margin-bottom: 2.25em;
-  text-align: left;
-}
-.cv-container section header .header-text {
-  padding: 0px 0.5em 0px 0px;
-  background: white;
-  text-align: center;
-  vertical-align: middle;
-  display: inline-block;
-  margin: 0em 2px 0px 0px;
-  z-index: 2;
-  position: relative;
-}
-.cv-container section header:after {
-  content: '';
-  display: block;
-  top: 1em;
-  border-bottom: 1px solid #dedede;
-  position: absolute;
-  left: 0;
-  right: 0;
-  width: 100%;
-  z-index: 0;
-}
-.cv-container section header {
-  margin-bottom: 1.25em;
-}
-.cv-container .column-container {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-}
-.cv-container .main {
-  width: 67%;
-}
-.cv-container .sidebar {
-  padding: 0% 3%;
-  width: 33%;
-  color: white;
-  z-index: 1;
-}
-.cv-container .sidebar .header-text {
-  background-color: #425370;
-}
-.cv-container .sidebar article a {
-  color: white;
-}
-.cv-container .sidebar .user-contact li,
-.cv-container .sidebar .user-links li {
-  margin-bottom: 0.75em;
-}
-.cv-container .sidebar .user-title {
-  padding: 15px 0px;
-}
-.cv-container .sidebar .user-thumb {
-  max-width: 50%;
-  margin: 0px auto;
-  border: 1px solid white;
-  padding: 4px;
-  border-radius: 100%;
-  margin-top: 1px;
-}
-.cv-container .sidebar .user-thumb .css-crop {
-  padding-bottom: 100%;
-  border-radius: 100%;
-}
-.cv-container .sidebar article.contact_info {
-  margin-bottom: 2em;
-}
-.cv-container .sidebar .margin-top {
-  margin-top: 1.5em;
-}
-.cv-container .sidebar .contact-field {
-  margin-bottom: 1em;
-}
-.cv-container .sidebar .contact-field h4 {
-  margin-bottom: 0px;
-}
-.cv-container .sidebar .competency h6 {
-  color: white;
-}
-.cv-container .sidebar .competency .competency-list {
-  padding: initial;
-}
-.cv-container .sidebar .competency .competency-list li {
-  opacity: 0.2;
-  background-color: white;
-}
-.cv-container .sidebar .competency .competency-list li.filled {
-  opacity: 1;
-}
-.cv-container .vcard ul.user-contact li:before {
-  font-family: FontAwesome;
-  display: inline-block;
-  width: 1em;
-  margin-right: 0.25em;
-}
-.cv-container .vcard li.adr:before {
-  content: "\f041";
-}
-.cv-container .vcard li.phone:before {
-  content: "\f095";
-}
-.cv-container .vcard li.email:before {
-  content: "\f003";
-}
-.cv-container .main {
-  padding: 2em 3%;
-  padding-top: 0px;
-}
-.cv-container .main h3 {
-  color: #555555;
-}
-.cv-container .main .header-text {
-  background-color: white;
-}
-.cv-container #summary header {
-  text-align: center;
-}
-.cv-container #summary header .header-text {
-  padding: 0px 0.5em;
-}
-.cv-container #summary article {
-  margin-top: 0px;
-  text-align: center;
-  padding: 0em 1.5em;
-  font-size: 115%;
-  font-weight: 200;
 }
 .cv-container article {
   clear: both;
-  margin-bottom: 1.25em;
 }
-.cv-container .dated_story .article-headings {
-  float: left;
-  width: 18%;
-  margin-right: 1%;
+.cv-container header {
+  padding-top: 5em;
+  margin-bottom: 2em;
+  font-weight: initial;
+  text-align: center;
 }
-.cv-container .dated_story .article-body {
-  float: left;
-  width: 81%;
+.cv-container header .header-text {
+  text-transform: uppercase;
+  margin: 0px;
+  text-align: left;
 }
-.cv-container .dated_story#references .article-headings {
-  display: none;
-}
-.cv-container .dated_story#references .article-body {
+.cv-container .content-container {
+  max-width: 1200px;
+  padding: 0px 5%;
+  margin: 0px auto;
   width: 100%;
 }
-.cv-container .competency-list {
-  list-style: none;
-  width: 100%;
-  padding-left: 0.25em;
+.cv-container .content-container section:after {
+  content: " ";
+  display: table;
 }
-.cv-container .competency-list li {
-  height: 1em;
-  width: 8%;
-  margin-right: 2%;
-  background-color: #cccccc;
-  -webkit-transform: skewX(-30deg);
-  -ms-transform: skewX(-30deg);
-  -moz-transform-origin: skewX(-30deg);
-  -o-transform-origin: skewX(-30deg);
-  transform: skewX(-30deg);
+.cv-container .content-container.full-width {
+  padding: 0px;
+}
+.cv-container .vcard {
+  margin: 0px auto;
+  text-align: center;
+}
+.cv-container .navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+}
+.cv-container .navbar-nav {
+  margin: 7.5px -15px;
+}
+.cv-container .navbar-nav > li > a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 20px;
   display: inline-block;
 }
-.cv-container .competency-list li.filled {
-  background-color: #425370;
+@media (min-width: 768px) {
+  .cv-container .navbar-nav {
+    float: left;
+    margin: 0;
+  }
+  .cv-container .navbar-nav > li {
+    float: left;
+    line-height: 37px;
+  }
+  .cv-container .navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 }
-.cv-container .portfolio .row {
-  margin-left: -5px;
-  margin-right: -5px;
+.cv-container .navbar-nav > li > a {
+  padding: 10px 20px;
 }
-.cv-container .portfolio .col-sm-4 {
-  padding-left: 5px;
-  padding-right: 5px;
+.cv-container .navbar-nav > li > a:hover,
+.cv-container .navbar-nav > li > a:focus {
+  background: rgba(255, 255, 255, 0.3);
 }
-.cv-container .portfolio .asset .asset-description {
-  display: none;
+@media (max-width: 768px) {
+  .cv-container .dropdown-menu > li > a {
+    color: white !important;
+  }
 }
-.cv-container .portfolio label {
-  font-weight: 700;
-  margin-bottom: 5px;
-  margin-top: 5px;
-  min-height: 1.5em;
+.cv-container .menu {
+  background: white;
+  border-bottom: 1px solid #DEDEDE;
 }
-.cv-container .portfolio .css-crop {
-  width: 100%;
-  padding-bottom: 75%;
-  background-size: cover;
-  background-position: center center;
-  border: 1px solid #425370;
-  -webkit-box-shadow: 1px 1px 3px 0px #cccccc;
-  box-shadow: 1px 1px 3px 0px #cccccc;
+.cv-container .menu-bar {
+  position: relative;
 }
-.cv-container .portfolio a label {
-  cursor: pointer;
+.cv-container .menu-bar .nav {
+  height: 58px;
+  overflow: hidden;
+  margin-left: 17%;
+  font-size: 110%;
 }
-.cv-container .sidebar .portfolio .asset {
-  padding-left: 0px;
+.cv-container .menu-bar .nav > li > a {
+  font-family: "Oswald", "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, 华文细黑, STXihei, 黑体, SimHei, sans-serif;
+  font-weight: 300;
+  line-height: 150%;
+  padding: 15px 25px;
+  border-right: 1px solid #f6f6f6;
+}
+.cv-container .user-thumb {
+  width: 15%;
+  position: absolute;
+  bottom: 0px;
+}
+.cv-container .user-thumb .css-crop {
+  padding-bottom: 100%;
+  border: 2px solid black;
+}
+.cv-container .user-title {
+  text-shadow: 0px 0px 5px black;
+  padding: 0px;
+}
+.cv-container .user-title h1 {
+  border-bottom: 2px solid white;
+  display: inline-block;
+}
+.cv-container .popover {
+  color: #666;
+}
+.cv-container section[data-table=graph_stories],
+.cv-container section[data-table=text_stories] {
+  margin-left: 33.33333%;
+  border-left: 1px solid #e0e0e0;
+  padding-left: 50px;
+}
+.cv-container .summary-header {
+  text-align: center;
+}
+.cv-container .summary-text {
+  margin-top: 0px;
+  font-size: 125%;
+  font-weight: 200;
+}
+.cv-container .timetable-right {
+  padding-left: 75px;
+  min-height: 75px;
+}
+.cv-container article .article-headings {
   padding-right: 0px;
 }
-.cv-container .sidebar .portfolio .css-crop {
-  border: 0px;
-  padding: 0px;
-  height: auto;
-  background-image: none !important;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+.cv-container article .article-body {
+  padding-bottom: 3em;
+  min-height: 7em;
 }
-.cv-container .sidebar .portfolio .css-crop img {
-  display: block !important;
-}
-@media (min-width: 768px) {
-  .cv-container .sidebar .portfolio label {
-    text-align: left;
-  }
-  .cv-container .sidebar .portfolio .asset,
-  .cv-container .sidebar .portfolio .asset-thumb {
-    width: 100%;
-  }
-  .cv-container .sidebar .portfolio .asset-description {
-    display: block;
-  }
-}
-.cv-container .portfolio label {
-  font-weight: initial;
-}
-.cv-container .portfolio .css-crop {
+.cv-container .competency .competency-bar {
+  margin: 0.5em 0px 0.75em;
   width: 100%;
-  padding-bottom: 75%;
-  border: 2px solid #425370;
-  border-radius: 2em 0px 2em 0px;
-  box-shadow: 1px 1px 3px 0px #dedede;
+  background-color: #DEDEDE;
+  border-radius: 2px;
+  height: 8px;
+  -webkit-transform: skewX(-45deg);
+  -ms-transform: skewX(-45deg);
+  -moz-transform-origin: skewX(-45deg);
+  -o-transform-origin: skewX(-45deg);
+  transform: skewX(-45deg);
+}
+.cv-container .competency .competency-level {
+  background-color: #64B1F2;
+  border-radius: 2px;
+  height: 100%;
+}
+.cv-container .popup-gallery.timetable-right {
+  padding-left: 50px;
+  padding-right: 10px;
+  padding-bottom: 3em;
+}
+.cv-container .portfolio .col-sm {
+  float: left;
+  width: 50%;
+  position: relative;
+}
+.cv-container .portfolio .asset-thumb {
+  position: relative;
+  border: 3px solid #666;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.cv-container .portfolio .asset-thumb:hover .overlay {
+  opacity: 1;
+}
+.cv-container .portfolio .asset-thumb:hover .portfolio-open {
+  bottom: 0px;
+}
+.cv-container .portfolio .asset-thumb:hover .css-crop {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+.cv-container .portfolio .asset-thumb .overlay {
+  position: absolute;
+  left: 0px;
+  bottom: -1px;
+  max-width: 100%;
+  padding: 0.625em;
+  z-index: 10;
+  display: block;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.6);
+  transition: all 0.5s ease;
+}
+.cv-container .portfolio .asset-thumb .overlay a label {
+  cursor: pointer;
+}
+.cv-container .portfolio .asset-thumb .css-crop {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  width: 100%;
+  padding-bottom: 80%;
+}
+.cv-container .portfolio .asset {
+  padding: 0px 5px 10px 5px;
+}
+.cv-container section[data-table=graph_stories] article .article-body {
+  padding-bottom: 0px;
+  min-height: initial;
+}
+.cv-container .user-contact,
+.cv-container .user-links {
+  list-style: none;
+  padding-top: 0.25em;
+  margin: 0px;
+  text-align: center;
+  padding-left: 0px;
+}
+.cv-container .user-contact i,
+.cv-container .user-links i {
+  text-align: center;
+  width: 1.35em;
+  color: rgba(255, 255, 255, 0.75);
+}
+.cv-container .user-contact li,
+.cv-container .user-links li {
+  font-size: 95%;
+  margin-bottom: 0.25em;
+  overflow: visible;
+  white-space: nowrap;
+  display: inline-block;
+}
+.cv-container .user-contact li:before {
+  content: '\2022';
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 150%;
+  line-height: 0.5em;
+  vertical-align: middle;
+  margin: 0px 0.25em;
+}
+.cv-container .user-contact li:first-child:before {
+  content: initial;
+}
+.cv-container .user-contact .title {
+  padding: 0px 5%;
+}
+.cv-container .timetable-left {
+  border-right: 0;
+}
+.cv-container .timetable-left.marked:after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #64B1F2;
+  border-radius: 100%;
+  box-shadow: 0px 0px 0px 2px white;
+  top: 12px;
+  right: -6px;
+  z-index: 1;
+}
+.cv-container .timetable-right {
+  border-left: 1px solid #e0e0e0;
+  padding-left: 55px;
+}
+.cv-container .timetable-right.last {
+  padding-bottom: 2em;
 }
 .cv-container .edit-new {
   width: 100%;
   margin-bottom: 0px;
 }
-.cv-container .sidebar .add-section a.btn {
-  color: white;
-}
 @media (max-width: 768px) {
-  .cv-container .cv-content {
-    padding: 0px 0px 3em 0px;
+  .cv-container .menu-bar .user-thumb {
+    width: 100px;
+    bottom: -33px;
   }
-  .cv-container .cv-content:before {
-    content: none;
+  .cv-container .menu-bar .navbar-nav {
+    display: none;
   }
-  .cv-container #summary article {
-    padding: 0px;
-  }
-  .cv-container .column-container {
-    display: block;
-  }
-  .cv-container .main {
-    padding: 2em 5% !important;
-    width: 100%;
-    display: block;
-  }
-  .cv-container .sidebar {
-    padding: 3em 5% !important;
-    background-color: #425370;
-    float: none;
+  .cv-container .col-sm,
+  .cv-container section[data-table=text_stories],
+  .cv-container section[data-table=graph_stories] {
     width: 100% !important;
+    margin-left: 0px;
   }
-  .cv-container article .article-headings,
-  .cv-container article .article-body {
-    width: 100% !important;
+  .cv-container .timetable-right,
+  .cv-container section[data-table=text_stories],
+  .cv-container section[data-table=graph_stories] {
+    border-left: none;
+    padding-left: 15px;
+  }
+  .cv-container .timetable-right.popup-gallery,
+  .cv-container section[data-table=text_stories].popup-gallery,
+  .cv-container section[data-table=graph_stories].popup-gallery {
+    padding-left: 10px;
+  }
+  .cv-container img.holder {
+    display: none;
   }
 }
 .pdf body > .container {
@@ -820,23 +873,23 @@
 }
 .pdf .cv-container {
   margin: 0px;
+  font-size: 13px;
 }
-.pdf .cv-container .cv-content {
-  padding-top: 1px;
+.pdf .cv-container .banner {
+  padding-top: 75px;
+  padding-bottom: 75px;
 }
-.pdf .cv-container .header-text:after {
-  padding-right: 0em;
-  content: " \00a0";
+.pdf .cv-container .navbar-nav > li {
+  display: none;
 }
-.pdf .cv-container .chart-container {
-  width: 600px !important;
+.pdf .cv-container .banner {
+  box-shadow: none;
 }
-.pdf .cv-container .main > *:last-child,
-.pdf .cv-container .sidebar > *:last-child {
-  page-break-after: always;
+.pdf .cv-container .contact_info > .banner {
+  padding: 75px 0px;
 }
-.pdf .cv-container .main {
-  padding: 0 3%;
+.pdf .cv-container .footer.banner {
+  display: none;
 }
 @page {
   margin: 1.2cm;
@@ -844,9 +897,20 @@
 @page :first {
   margin-top: 0cm;
 }
-</style><div><link rel="stylesheet" type="text/css" href="https://www.visualcv.com/less/avant?%40primary=%23425370&amp;%40body-font-size=15px&amp;%40section-margins=2.5em&amp;%40article-margins=1.25em"/><div class="cv-container animated fadeIn "><div class="cv-content"><div class="column-container"><div class="sidebar"><section id="profile" class="profile"><article class="vcard " data-bind="content"><div class="user-thumb" data-bind="thumb"><div class="css-crop bg-cover" style="background-image:url();"></div></div><div class="fn user-title"><h1 class="full-name" data-bind="full_name"><span class="undefined needsclick" contenteditable="false" data-placeholder="Full name">Anjali Chaudhary</span></h1><h2 class="title empty" data-bind="headline"><span class="undefined needsclick empty" contenteditable="false" data-placeholder="Headline / current title"></span></h2></div><ul class="user-contact"><li class="adr locality empty" data-bind="location"><span class="undefined needsclick empty" contenteditable="false" data-placeholder="Location"></span></li><li class="phone" data-bind="phone"><span class="undefined needsclick" contenteditable="false" data-placeholder="Phone">+91-8860323425</span></li><li class="email" data-bind="email"><a href="/cdn-cgi/l/email-protection#99f8f7f3f8f5f0faa8aea0afd9fef4f8f0f5b7faf6f4"><span class="__cf_email__" data-cfemail="6e0f00040f02070d5f5957582e09030f0702400d0103">[email&#160;protected]</span></a></li></ul><ul class="user-links user-websites" data-bind="websites"></ul></article></section><section data-bind="sidebar_sections" id="strengths" class="strengths page-break"><header><h3 class="header-text" data-bind="label"><span class="undefined needsclick" contenteditable="false" data-placeholder="Skills">TECHNICAL SKILLS </span></h3></header><article class="competency " data-bind="contents"><div class="article-headings"><h6 data-bind="name"><span class="undefined needsclick" contenteditable="false" data-placeholder="Name">Leadership Skill</span></h6></div><div class="article-body competency"><ul class="competency-list"><li class="filled"></li><li class="filled"></li><li class="filled"></li><li class="filled"></li><li class="filled"></li><li class="filled"></li><li class="filled"></li><li class="filled"></li><li class=""></li><li class=""></li></ul><div id="react-tinymce-1299932" class=" mce-content-body" spellcheck="true" placeholder="Description"><p>Lead a team of six members for a national level hackathon&nbsp;</p>
+</style><div><link rel="stylesheet" type="text/css" href="https://www.visualcv.com/less/onyx?%40body-font-size=17px&amp;%40article-margins=3em&amp;%40bg-url=https%3A%2F%2Fs3.amazonaws.com%2Fworkstory%2Fimages%2Fverge.jpg"/><div class="cv-container animated fadeIn "><div class="cv-content single-column"><div class="banner"><section id="profile" class="vcard profile"><article data-bind="content" class=""><div class="fn user-title"><h1 class="full-name" data-bind="full_name"><span class="undefined needsclick" contenteditable="false" data-placeholder="Full name">Anjali Chaudhary</span></h1><h2 class="title empty" data-bind="headline"><span class="undefined needsclick empty" contenteditable="false" data-placeholder="Headline / current title"></span></h2></div><ul class="user-contact"><li class="adr locality empty" data-bind="location"><span class="undefined needsclick empty" contenteditable="false" data-placeholder="Location"></span></li><li class="phone" data-bind="phone"><span class="undefined needsclick" contenteditable="false" data-placeholder="Phone">+91-8860323425</span></li><li class="email" data-bind="email"><a href="/cdn-cgi/l/email-protection#debfb0b4bfb2b7bdefe9e7e89eb9b3bfb7b2f0bdb1b3"><span class="__cf_email__" data-cfemail="30515e5a515c59530107090670575d51595c1e535f5d">[email&#160;protected]</span></a></li></ul><ul class="user-links user-websites" data-bind="websites"></ul></article></section></div><div class="menu profile" data-bind="profile_sidebar" id="profile"><div class="menu-bar content-container " data-bind="content"><div class="user-thumb" data-bind="thumb"><div class="css-crop bg-cover" style="background-image:url();"></div></div><div class="menu" data-bind="menu"><ul class="nav navbar-nav"><li data-scroll-to="#positions"><a href="javacript:void(0);">Internship History</a></li><li data-scroll-to="#degrees"><a href="javacript:void(0);">ACADEMIC QUALIFICATION</a></li><li data-scroll-to="#strengths"><a href="javacript:void(0);">TECHNICAL SKILLS </a></li><li data-scroll-to="#text_story"><a href="javacript:void(0);">Area Of Interest</a></li><li data-scroll-to="#text_story_3ZB0ki6q8t"><a href="javacript:void(0);">Projects :</a></li><li data-scroll-to="#dated_stories"><a href="javacript:void(0);">EXTRACURRICULAR ACTIVITIES </a></li><li data-scroll-to="#text_story_YN_7aeT9Ju"><a href="javacript:void(0);">Personal Details</a></li></ul></div><div class="clearfix"></div></div></div><div class="content-container"><section data-bind="sections" id="positions" class="dated_story"><div class="col-sm-4 timetable-left"></div><div class="col-sm-8 timetable-right"><header><h3 class="header-text" data-bind="label"><span class="undefined needsclick" contenteditable="false" data-placeholder="Work experience">Internship History</span></h3></header></div><article data-bind="contents" class=""><div class="col-sm-4 timetable-left marked"><a data-bind="organization_url" target="_blank" rel="nofollow" href="http://www.goomo.com"><h4 data-bind="organization"><span class="undefined needsclick" contenteditable="false" data-placeholder="Organization">Goomo.com</span></h4></a><h5 class="date-range"><span data-bind="start_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">28-06-2017</span></span><span data-bind="end_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">28-09-2017</span></span></h5></div><div class="col-sm-8 timetable-right"><div class="article-body"><h4 data-bind="title"><span class="undefined needsclick" contenteditable="false" data-placeholder="Job title">Ruby on Rails developer</span></h4><div id="react-tinymce-1302212" class=" mce-content-body" spellcheck="true" placeholder="Description"><p>RoR developer&nbsp;</p>
+<p><span><span>Created Flights Dashboard (Back-End and Front-End)</span></span></p>
+<p><span><span><span><span>Made an API debugging tool for streamlining the process of debugging&nbsp;</span></span></span></span></p></div></div></div><div class="clearfix"></div></article><article data-bind="contents" class=""><div class="col-sm-4 timetable-left marked"><div data-bind="organization_url" target="_blank" rel="nofollow"><h4 data-bind="organization"><span class="undefined needsclick" contenteditable="false" data-placeholder="Organization">ILMP technologies</span></h4></div><h5 class="date-range"><span data-bind="start_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2016-06</span></span><span data-bind="end_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2016-07</span></span></h5></div><div class="col-sm-8 timetable-right"><div class="article-body"><h4 data-bind="title"><span class="undefined needsclick" contenteditable="false" data-placeholder="Job title">Web developer </span></h4><div id="react-tinymce-1302214" class=" mce-content-body" spellcheck="true" placeholder="Description"><p>Worked on Front-End of NetworC HR Portal&nbsp;</p></div></div></div><div class="clearfix"></div></article></section><section data-bind="sections" id="degrees" class="dated_story"><div class="col-sm-4 timetable-left"></div><div class="col-sm-8 timetable-right"><header><h3 class="header-text" data-bind="label"><span class="undefined needsclick" contenteditable="false" data-placeholder="Education">ACADEMIC QUALIFICATION</span></h3></header></div><article data-bind="contents" class=""><div class="col-sm-4 timetable-left marked"><div data-bind="organization_url" target="_blank" rel="nofollow"><h4 data-bind="organization"><span class="undefined needsclick" contenteditable="false" data-placeholder="School name">NITRA Technical Campus, Dr. A.P.J. Abdul Kalam Technical University</span></h4></div><h5 class="date-range"><span data-bind="start_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2014-08</span></span><span data-bind="end_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2018-08</span></span></h5></div><div class="col-sm-8 timetable-right"><div class="article-body"><h4 data-bind="title"><span class="undefined needsclick" contenteditable="false" data-placeholder="Degree name">Bachelor of Technology in Computer Science Engineering</span></h4><div id="react-tinymce-1302216" class=" mce-content-body" spellcheck="true" placeholder="Description"><ul>
+<li>Stated&nbsp;to&nbsp;Complete&nbsp;in 2018</li>
+<li>First year - 82%</li>
+<li>Second year - 84%</li>
+<li><span><span>Third year - 78%</span></span></li>
+</ul></div></div></div><div class="clearfix"></div></article><article data-bind="contents" class=""><div class="col-sm-4 timetable-left marked"><div data-bind="organization_url" target="_blank" rel="nofollow"><h4 data-bind="organization"><span class="undefined needsclick" contenteditable="false" data-placeholder="School name">ASSISI Convent Sr. Sec. School, NOIDA  </span></h4></div><h5 class="date-range"><span data-bind="start_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2013</span></span><span data-bind="end_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2014</span></span></h5></div><div class="col-sm-8 timetable-right"><div class="article-body"><h4 data-bind="title"><span class="undefined needsclick" contenteditable="false" data-placeholder="Degree name">Intermediate</span></h4><div id="react-tinymce-1302218" class=" mce-content-body" spellcheck="true" placeholder="Description"><ul>
+<li><strong>Result:</strong>&nbsp;87%</li>
+</ul></div></div></div><div class="clearfix"></div></article><article data-bind="contents" class=""><div class="col-sm-4 timetable-left marked"><div data-bind="organization_url" target="_blank" rel="nofollow"><h4 data-bind="organization"><span class="undefined needsclick" contenteditable="false" data-placeholder="School name">ASSISI Convent Sr. Sec. School, NOIDA  </span></h4></div><h5 class="date-range"><span data-bind="start_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2011</span></span><span data-bind="end_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2012</span></span></h5></div><div class="col-sm-8 timetable-right"><div class="article-body"><h4 data-bind="title"><span class="undefined needsclick" contenteditable="false" data-placeholder="Degree name">High School</span></h4><div id="react-tinymce-1302220" class=" mce-content-body" spellcheck="true" placeholder="Description"><ul>
+<li><strong>Result:&nbsp;</strong>91%</li>
+</ul></div></div></div><div class="clearfix"></div></article></section><section data-bind="sections" id="strengths" class="strengths page-break"><div class="col-sm-4 timetable-left"></div><div class="col-sm-8 timetable-right"><header><h3 class="header-text" data-bind="label"><span class="undefined needsclick" contenteditable="false" data-placeholder="Skills">TECHNICAL SKILLS </span></h3></header></div><article data-bind="contents" class=""><div class="col-sm-4 timetable-left"><h4 data-bind="name"><span class="undefined needsclick" contenteditable="false" data-placeholder="Name">Leadership Skill</span></h4></div><div class="col-sm-8 timetable-right"><div class="article-body competency"><div class="competency-bar"><div class="competency-level" data-bind="level" style="width:78%;"></div></div><div id="react-tinymce-1302222" class=" mce-content-body" spellcheck="true" placeholder="Description"><p>Lead a team of six members for a national level hackathon&nbsp;</p>
 <p>Has managed more than 50 intrapreneurs simultaneously with my studies.</p>
-<p>Has organised various events being the senior coordinator at college level&nbsp;</p></div></div><div class="clearfix"></div></article><article class="competency " data-bind="contents"><div class="article-headings"><h6 data-bind="name"><span class="undefined needsclick" contenteditable="false" data-placeholder="Name">Language</span></h6></div><div class="article-body competency"><ul class="competency-list"><li class="filled"></li><li class="filled"></li><li class="filled"></li><li class="filled"></li><li class="filled"></li><li class="filled"></li><li class=""></li><li class=""></li><li class=""></li><li class=""></li></ul><div id="react-tinymce-1299934" class=" mce-content-body" spellcheck="true" placeholder="Description"><ul>
+<p>Has organised various events being the senior coordinator at college level&nbsp;</p></div></div></div><div class="clearfix"></div></article><article data-bind="contents" class=""><div class="col-sm-4 timetable-left"><h4 data-bind="name"><span class="undefined needsclick" contenteditable="false" data-placeholder="Name">Language</span></h4></div><div class="col-sm-8 timetable-right"><div class="article-body competency"><div class="competency-bar"><div class="competency-level" data-bind="level" style="width:58%;"></div></div><div id="react-tinymce-1302224" class=" mce-content-body" spellcheck="true" placeholder="Description"><ul>
 <li><span>Ruby on Rails</span></li>
 <li><span><span><span>Postgres SQL&nbsp;</span></span></span></li>
 <li>Python</li>
@@ -855,7 +919,7 @@
 <li>SQL</li>
 <li>HTML5/CSS3</li>
 <li>JavaScript</li>
-</ul></div></div><div class="clearfix"></div></article><article class="competency " data-bind="contents"><div class="article-headings"><h6 data-bind="name"><span class="undefined needsclick" contenteditable="false" data-placeholder="Name">Tools</span></h6></div><div class="article-body competency"><ul class="competency-list"><li class="filled"></li><li class="filled"></li><li class="filled"></li><li class="filled"></li><li class="filled"></li><li class="filled"></li><li class="filled"></li><li class=""></li><li class=""></li><li class=""></li></ul><div id="react-tinymce-1299936" class=" mce-content-body" spellcheck="true" placeholder="Description"><ul>
+</ul></div></div></div><div class="clearfix"></div></article><article data-bind="contents" class=""><div class="col-sm-4 timetable-left"><h4 data-bind="name"><span class="undefined needsclick" contenteditable="false" data-placeholder="Name">Tools</span></h4></div><div class="col-sm-8 timetable-right"><div class="article-body competency"><div class="competency-bar"><div class="competency-level" data-bind="level" style="width:66%;"></div></div><div id="react-tinymce-1302226" class=" mce-content-body" spellcheck="true" placeholder="Description"><ul>
 <li><span><span><span><span>Jupyter notebook&nbsp;</span></span></span></span></li>
 <li><span><span>Pg admin&nbsp;</span></span></li>
 <li>Mysql Workbench</li>
@@ -863,10 +927,10 @@
 <li>MS Office</li>
 <li>Webstorm</li>
 <li>Brackets</li>
-</ul></div></div><div class="clearfix"></div></article><article class="competency " data-bind="contents"><div class="article-headings"><h6 data-bind="name"><span class="undefined needsclick" contenteditable="false" data-placeholder="Name">Operating System</span></h6></div><div class="article-body competency"><ul class="competency-list"><li class="filled"></li><li class="filled"></li><li class="filled"></li><li class="filled"></li><li class="filled"></li><li class="filled"></li><li class="filled"></li><li class="filled"></li><li class="filled"></li><li class="filled"></li></ul><div id="react-tinymce-1299938" class=" mce-content-body" spellcheck="true" placeholder="Description"><ul>
+</ul></div></div></div><div class="clearfix"></div></article><article data-bind="contents" class=""><div class="col-sm-4 timetable-left"><h4 data-bind="name"><span class="undefined needsclick" contenteditable="false" data-placeholder="Name">Operating System</span></h4></div><div class="col-sm-8 timetable-right"><div class="article-body competency"><div class="competency-bar"><div class="competency-level" data-bind="level" style="width:100%;"></div></div><div id="react-tinymce-1302228" class=" mce-content-body" spellcheck="true" placeholder="Description"><ul>
 <li>Linux</li>
 <li>Windows</li>
-</ul></div></div><div class="clearfix"></div></article></section><section data-bind="sidebar_sections" id="text_story" class="text_story"><header><h3 class="header-text" data-bind="label"><span class="undefined needsclick" contenteditable="false" data-placeholder="Text section">Area Of Interest</span></h3></header><article data-bind="content" class=""><div id="react-tinymce-1299940" class=" mce-content-body" spellcheck="true" placeholder="Description"><p></p>
+</ul></div></div></div><div class="clearfix"></div></article></section><section data-bind="sections" id="text_story" class="text_story"><div class="col-sm-4 timetable-left"></div><div class="col-sm-8 timetable-right"><header><h3 class="header-text" data-bind="label"><span class="undefined needsclick" contenteditable="false" data-placeholder="Text section">Area Of Interest</span></h3></header></div><article data-bind="content" class=""><div class="col-sm-4 timetable-left"></div><div class="col-sm-8 timetable-right"><div id="react-tinymce-1302230" class=" mce-content-body" spellcheck="true" placeholder="Description"><p></p>
 <ul>
 <li>Algorithms</li>
 <li><span><span>Data science</span></span></li>
@@ -874,18 +938,7 @@
 <li>Machine Learning</li>
 <li>Database Design</li>
 <li><span></span>Graphics&nbsp;<span></span></li>
-</ul></div></article></section><div data-bind="add-sidebar-section-btn"><span class="undefined needsclick" contenteditable="false" data-placeholder="add-sidebar-section-btn"></span></div></div><div class="main"><section data-bind="sections" id="positions" class="dated_story"><header><h3 class="header-text" data-bind="label"><span class="undefined needsclick" contenteditable="false" data-placeholder="Work experience">Internship History</span></h3></header><article data-bind="contents" class=""><div class="article-headings"><h6 class="date-range"><span data-bind="start_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">28-06-2017</span></span><span data-bind="end_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">28-09-2017</span></span></h6></div><div class="article-body"><h4 data-bind="title"><span class="undefined needsclick" contenteditable="false" data-placeholder="Job title">Ruby on Rails developer</span></h4><a data-bind="organization_url" target="_blank" rel="nofollow" href="http://www.goomo.com"><h5 data-bind="organization"><span class="undefined needsclick" contenteditable="false" data-placeholder="Organization">Goomo.com</span></h5></a><div id="react-tinymce-1299942" class=" mce-content-body" spellcheck="true" placeholder="Description"><p>RoR developer&nbsp;</p>
-<p><span><span>Created Flights Dashboard (Back-End and Front-End)</span></span></p>
-<p><span><span><span><span>Made an API debugging tool for streamlining the process of debugging&nbsp;</span></span></span></span></p></div></div></article><article data-bind="contents" class=""><div class="article-headings"><h6 class="date-range"><span data-bind="start_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2016-06</span></span><span data-bind="end_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2016-07</span></span></h6></div><div class="article-body"><h4 data-bind="title"><span class="undefined needsclick" contenteditable="false" data-placeholder="Job title">Web developer </span></h4><div data-bind="organization_url" target="_blank" rel="nofollow"><h5 data-bind="organization"><span class="undefined needsclick" contenteditable="false" data-placeholder="Organization">ILMP technologies</span></h5></div><div id="react-tinymce-1299944" class=" mce-content-body" spellcheck="true" placeholder="Description"><p>Worked on Front-End of NetworC HR Portal&nbsp;</p></div></div></article></section><section data-bind="sections" id="degrees" class="dated_story"><header><h3 class="header-text" data-bind="label"><span class="undefined needsclick" contenteditable="false" data-placeholder="Education">ACADEMIC QUALIFICATION</span></h3></header><article data-bind="contents" class=""><div class="article-headings"><h6 class="date-range"><span data-bind="start_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2014-08</span></span><span data-bind="end_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2018-08</span></span></h6></div><div class="article-body"><h4 data-bind="title"><span class="undefined needsclick" contenteditable="false" data-placeholder="Degree name">Bachelor of Technology in Computer Science Engineering</span></h4><div data-bind="organization_url" target="_blank" rel="nofollow"><h5 data-bind="organization"><span class="undefined needsclick" contenteditable="false" data-placeholder="School name">NITRA Technical Campus, Dr. A.P.J. Abdul Kalam Technical University</span></h5></div><div id="react-tinymce-1299946" class=" mce-content-body" spellcheck="true" placeholder="Description"><ul>
-<li>Stated&nbsp;to&nbsp;Complete&nbsp;in 2018</li>
-<li>First year - 82%</li>
-<li>Second year - 84%</li>
-<li><span><span>Third year - 78%</span></span></li>
-</ul></div></div></article><article data-bind="contents" class=""><div class="article-headings"><h6 class="date-range"><span data-bind="start_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2013</span></span><span data-bind="end_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2014</span></span></h6></div><div class="article-body"><h4 data-bind="title"><span class="undefined needsclick" contenteditable="false" data-placeholder="Degree name">Intermediate</span></h4><div data-bind="organization_url" target="_blank" rel="nofollow"><h5 data-bind="organization"><span class="undefined needsclick" contenteditable="false" data-placeholder="School name">ASSISI Convent Sr. Sec. School, NOIDA  </span></h5></div><div id="react-tinymce-1299948" class=" mce-content-body" spellcheck="true" placeholder="Description"><ul>
-<li><strong>Result:</strong>&nbsp;87%</li>
-</ul></div></div></article><article data-bind="contents" class=""><div class="article-headings"><h6 class="date-range"><span data-bind="start_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2011</span></span><span data-bind="end_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2012</span></span></h6></div><div class="article-body"><h4 data-bind="title"><span class="undefined needsclick" contenteditable="false" data-placeholder="Degree name">High School</span></h4><div data-bind="organization_url" target="_blank" rel="nofollow"><h5 data-bind="organization"><span class="undefined needsclick" contenteditable="false" data-placeholder="School name">ASSISI Convent Sr. Sec. School, NOIDA  </span></h5></div><div id="react-tinymce-1299950" class=" mce-content-body" spellcheck="true" placeholder="Description"><ul>
-<li><strong>Result:&nbsp;</strong>91%</li>
-</ul></div></div></article></section><section data-bind="sections" id="text_story_3ZB0ki6q8t" class="text_story"><header><h3 class="header-text" data-bind="label"><span class="undefined needsclick" contenteditable="false" data-placeholder="Text section">PROJECTS:</span></h3></header><article data-bind="content" class=""><div id="react-tinymce-1299952" class=" mce-content-body" spellcheck="true" placeholder="Description"><p>#1</p>
+</ul></div></div><div class="clearfix"></div></article></section><section data-bind="sections" id="text_story_3ZB0ki6q8t" class="text_story"><div class="col-sm-4 timetable-left"></div><div class="col-sm-8 timetable-right"><header><h3 class="header-text" data-bind="label"><span class="undefined needsclick" contenteditable="false" data-placeholder="Text section">PROJECTS:</span></h3></header></div><article data-bind="content" class=""><div class="col-sm-4 timetable-left"></div><div class="col-sm-8 timetable-right"><div id="react-tinymce-1302232" class=" mce-content-body" spellcheck="true" placeholder="Description"><p>#1</p>
 <p><span><span>Working as a UI/UX tester for the upcoming mobile app CrypTrace.</span></span></p>
 <p>#2</p>
 <p>Participated in Smart India Hackathon as a team leader ,leading a team size of 6 members</p>
@@ -895,27 +948,27 @@
 <p>#3</p>
 <p>Participated in IT olympiad 2016-17</p>
 <p>Project: Automatic Rain Gauge system&nbsp;</p>
-<p>Project recognised as one among the top 8 projects</p></div></article></section><section data-bind="sections" id="dated_stories" class="dated_story page-break"><header><h3 class="header-text" data-bind="label"><span class="undefined needsclick" contenteditable="false" data-placeholder="Custom dated section">EXTRACURRICULAR ACTIVITIES </span></h3></header><article data-bind="contents" class=""><div class="article-headings"><h6 class="date-range"><span data-bind="start_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2017-01</span></span><span data-bind="end_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">Present</span></span></h6></div><div class="article-body"><h4 data-bind="title" class="empty"><span class="undefined needsclick empty" contenteditable="false" data-placeholder="Title"></span></h4><div data-bind="organization_url" target="_blank" rel="nofollow"><h5 data-bind="organization" class="empty"><span class="undefined needsclick empty" contenteditable="false" data-placeholder="Organization"></span></h5></div><div id="react-tinymce-1299954" class=" mce-content-body" spellcheck="true" placeholder="Description"><p>Volunteer for Digital Financial Literacy Campaign &nbsp;VISAKA</p></div></div></article><article data-bind="contents" class=""><div class="article-headings"><h6 class="date-range"><span data-bind="start_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2016-04</span></span><span data-bind="end_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2016-08</span></span></h6></div><div class="article-body"><h4 data-bind="title"><span class="undefined needsclick" contenteditable="false" data-placeholder="Title">Intrapreneurship</span></h4><div data-bind="organization_url" target="_blank" rel="nofollow"><h5 data-bind="organization"><span class="undefined needsclick" contenteditable="false" data-placeholder="Organization">Sharing Achievements and Rejuvinating Society(SARSO)</span></h5></div><div id="react-tinymce-1299956" class=" mce-content-body" spellcheck="true" placeholder="Description"><p>Youth outreach partner&nbsp;</p>
-<p>Managed a group size of 50 intrapreneurs as a leading simultaneously with the studies and earned commissions too .</p></div></div></article><article data-bind="contents" class=""><div class="article-headings"><h6 class="date-range"><span data-bind="start_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2016-09</span></span><span data-bind="end_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2017-01</span></span></h6></div><div class="article-body"><h4 data-bind="title"><span class="undefined needsclick" contenteditable="false" data-placeholder="Title">IT olympiad </span></h4><div data-bind="organization_url" target="_blank" rel="nofollow"><h5 data-bind="organization"><span class="undefined needsclick" contenteditable="false" data-placeholder="Organization">Rotary Club of Pune Pride</span></h5></div><div id="react-tinymce-1299958" class=" mce-content-body" spellcheck="true" placeholder="Description"><p>Participated in National level Information Technology(IT) Olympiad&nbsp;</p>
+<p>Project recognised as one among the top 8 projects</p></div></div><div class="clearfix"></div></article></section><section data-bind="sections" id="dated_stories" class="dated_story page-break"><div class="col-sm-4 timetable-left"></div><div class="col-sm-8 timetable-right"><header><h3 class="header-text" data-bind="label"><span class="undefined needsclick" contenteditable="false" data-placeholder="Custom dated section">EXTRACURRICULAR ACTIVITIES </span></h3></header></div><article data-bind="contents" class=""><div class="col-sm-4 timetable-left marked"><div data-bind="organization_url" target="_blank" rel="nofollow"><h4 data-bind="organization" class="empty"><span class="undefined needsclick empty" contenteditable="false" data-placeholder="Organization"></span></h4></div><h5 class="date-range"><span data-bind="start_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2017-01</span></span><span data-bind="end_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">Present</span></span></h5></div><div class="col-sm-8 timetable-right"><div class="article-body"><h4 data-bind="title" class="empty"><span class="undefined needsclick empty" contenteditable="false" data-placeholder="Title"></span></h4><div id="react-tinymce-1302234" class=" mce-content-body" spellcheck="true" placeholder="Description"><p>Volunteer for Digital Financial Literacy Campaign &nbsp;VISAKA</p></div></div></div><div class="clearfix"></div></article><article data-bind="contents" class=""><div class="col-sm-4 timetable-left marked"><div data-bind="organization_url" target="_blank" rel="nofollow"><h4 data-bind="organization"><span class="undefined needsclick" contenteditable="false" data-placeholder="Organization">Sharing Achievements and Rejuvinating Society(SARSO)</span></h4></div><h5 class="date-range"><span data-bind="start_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2016-04</span></span><span data-bind="end_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2016-08</span></span></h5></div><div class="col-sm-8 timetable-right"><div class="article-body"><h4 data-bind="title"><span class="undefined needsclick" contenteditable="false" data-placeholder="Title">Intrapreneurship</span></h4><div id="react-tinymce-1302236" class=" mce-content-body" spellcheck="true" placeholder="Description"><p>Youth outreach partner&nbsp;</p>
+<p>Managed a group size of 50 intrapreneurs as a leading simultaneously with the studies and earned commissions too .</p></div></div></div><div class="clearfix"></div></article><article data-bind="contents" class=""><div class="col-sm-4 timetable-left marked"><div data-bind="organization_url" target="_blank" rel="nofollow"><h4 data-bind="organization"><span class="undefined needsclick" contenteditable="false" data-placeholder="Organization">Rotary Club of Pune Pride</span></h4></div><h5 class="date-range"><span data-bind="start_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2016-09</span></span><span data-bind="end_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2017-01</span></span></h5></div><div class="col-sm-8 timetable-right"><div class="article-body"><h4 data-bind="title"><span class="undefined needsclick" contenteditable="false" data-placeholder="Title">IT olympiad </span></h4><div id="react-tinymce-1302238" class=" mce-content-body" spellcheck="true" placeholder="Description"><p>Participated in National level Information Technology(IT) Olympiad&nbsp;</p>
 <p>Round 1(Preliminary Test): Grade B</p>
 <p>Round 2(Test on Fundamentals): Grade A</p>
 <p>Round 3 : Qualified for Finale&nbsp;</p>
-<p>Finale : project among the top 8 .</p></div></div></article><article data-bind="contents" class=""><div class="article-headings"><h6 class="date-range"><span data-bind="start_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2015</span></span><span data-bind="end_date" class="empty"><span class="undefined needsclick empty" contenteditable="false" data-placeholder="YYYY"></span></span></h6></div><div class="article-body"><h4 data-bind="title"><span class="undefined needsclick" contenteditable="false" data-placeholder="Title">Participated</span></h4><div data-bind="organization_url" target="_blank" rel="nofollow"><h5 data-bind="organization"><span class="undefined needsclick" contenteditable="false" data-placeholder="Organization">Jaypee-Model United Nations </span></h5></div><div id="react-tinymce-1299960" class=" mce-content-body" spellcheck="true" placeholder="Description"><ul>
+<p>Finale : project among the top 8 .</p></div></div></div><div class="clearfix"></div></article><article data-bind="contents" class=""><div class="col-sm-4 timetable-left marked"><div data-bind="organization_url" target="_blank" rel="nofollow"><h4 data-bind="organization"><span class="undefined needsclick" contenteditable="false" data-placeholder="Organization">Jaypee-Model United Nations </span></h4></div><h5 class="date-range"><span data-bind="start_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2015</span></span><span data-bind="end_date" class="empty"><span class="undefined needsclick empty" contenteditable="false" data-placeholder="YYYY"></span></span></h5></div><div class="col-sm-8 timetable-right"><div class="article-body"><h4 data-bind="title"><span class="undefined needsclick" contenteditable="false" data-placeholder="Title">Participated</span></h4><div id="react-tinymce-1302240" class=" mce-content-body" spellcheck="true" placeholder="Description"><ul>
 <li><span> As Delegate of Bhutan in General Assembly</span></li>
-</ul></div></div></article><article data-bind="contents" class=""><div class="article-headings"><h6 class="date-range"><span data-bind="start_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2015</span></span><span data-bind="end_date" class="empty"><span class="undefined needsclick empty" contenteditable="false" data-placeholder="YYYY"></span></span></h6></div><div class="article-body"><h4 data-bind="title"><span class="undefined needsclick" contenteditable="false" data-placeholder="Title">Student Coordinator</span></h4><div data-bind="organization_url" target="_blank" rel="nofollow"><h5 data-bind="organization"><span class="undefined needsclick" contenteditable="false" data-placeholder="Organization">NITRA Technical Campus Sports Meet</span></h5></div><div id="react-tinymce-1299962" class=" mce-content-body" spellcheck="true" placeholder="Description"></div></div></article><article data-bind="contents" class=""><div class="article-headings"><h6 class="date-range"><span data-bind="start_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2015-04</span></span><span data-bind="end_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">Present</span></span></h6></div><div class="article-body"><h4 data-bind="title" class="empty"><span class="undefined needsclick empty" contenteditable="false" data-placeholder="Title"></span></h4><div data-bind="organization_url" target="_blank" rel="nofollow"><h5 data-bind="organization" class="empty"><span class="undefined needsclick empty" contenteditable="false" data-placeholder="Organization"></span></h5></div><div id="react-tinymce-1299964" class=" mce-content-body" spellcheck="true" placeholder="Description"><p>Volunteer in Training and Placement cell&nbsp;</p>
-<p>NITRA Technical Campus</p></div></div></article><article data-bind="contents" class=""><div class="article-headings"><h6 class="date-range"><span data-bind="start_date" class="empty"><span class="undefined needsclick empty" contenteditable="false" data-placeholder="YYYY"></span></span><span data-bind="end_date" class="empty"><span class="undefined needsclick empty" contenteditable="false" data-placeholder="YYYY"></span></span></h6></div><div class="article-body"><h4 data-bind="title" class="empty"><span class="undefined needsclick empty" contenteditable="false" data-placeholder="Title"></span></h4><div data-bind="organization_url" target="_blank" rel="nofollow"><h5 data-bind="organization" class="empty"><span class="undefined needsclick empty" contenteditable="false" data-placeholder="Organization"></span></h5></div><div id="react-tinymce-1299966" class=" mce-content-body" spellcheck="true" placeholder="Description"></div></div></article><article data-bind="contents" class=""><div class="article-headings"><h6 class="date-range"><span data-bind="start_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2015</span></span><span data-bind="end_date" class="empty"><span class="undefined needsclick empty" contenteditable="false" data-placeholder="YYYY"></span></span></h6></div><div class="article-body"><h4 data-bind="title"><span class="undefined needsclick" contenteditable="false" data-placeholder="Title">Student Coordinator </span></h4><div data-bind="organization_url" target="_blank" rel="nofollow"><h5 data-bind="organization"><span class="undefined needsclick" contenteditable="false" data-placeholder="Organization">NITRA Open Debate</span></h5></div><div id="react-tinymce-1299968" class=" mce-content-body" spellcheck="true" placeholder="Description"></div></div></article><article data-bind="contents" class=""><div class="article-headings"><h6 class="date-range"><span data-bind="start_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2012</span></span><span data-bind="end_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2013-01</span></span></h6></div><div class="article-body"><h4 data-bind="title"><span class="undefined needsclick" contenteditable="false" data-placeholder="Title">Ranked 1st in International cyber Olympiad</span></h4><div data-bind="organization_url" target="_blank" rel="nofollow"><h5 data-bind="organization"><span class="undefined needsclick" contenteditable="false" data-placeholder="Organization">School Level</span></h5></div><div id="react-tinymce-1299970" class=" mce-content-body" spellcheck="true" placeholder="Description"></div></div></article></section><section data-bind="sections" id="text_story_YN_7aeT9Ju" class="text_story"><header><h3 class="header-text" data-bind="label"><span class="undefined needsclick" contenteditable="false" data-placeholder="Text section">Personal Details</span></h3></header><article data-bind="content" class=""><div id="react-tinymce-1299972" class=" mce-content-body" spellcheck="true" placeholder="Description"><ul>
+</ul></div></div></div><div class="clearfix"></div></article><article data-bind="contents" class=""><div class="col-sm-4 timetable-left marked"><div data-bind="organization_url" target="_blank" rel="nofollow"><h4 data-bind="organization"><span class="undefined needsclick" contenteditable="false" data-placeholder="Organization">NITRA Technical Campus Sports Meet</span></h4></div><h5 class="date-range"><span data-bind="start_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2015</span></span><span data-bind="end_date" class="empty"><span class="undefined needsclick empty" contenteditable="false" data-placeholder="YYYY"></span></span></h5></div><div class="col-sm-8 timetable-right"><div class="article-body"><h4 data-bind="title"><span class="undefined needsclick" contenteditable="false" data-placeholder="Title">Student Coordinator</span></h4><div id="react-tinymce-1302242" class=" mce-content-body" spellcheck="true" placeholder="Description"></div></div></div><div class="clearfix"></div></article><article data-bind="contents" class=""><div class="col-sm-4 timetable-left marked"><div data-bind="organization_url" target="_blank" rel="nofollow"><h4 data-bind="organization" class="empty"><span class="undefined needsclick empty" contenteditable="false" data-placeholder="Organization"></span></h4></div><h5 class="date-range"><span data-bind="start_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2015-04</span></span><span data-bind="end_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">Present</span></span></h5></div><div class="col-sm-8 timetable-right"><div class="article-body"><h4 data-bind="title" class="empty"><span class="undefined needsclick empty" contenteditable="false" data-placeholder="Title"></span></h4><div id="react-tinymce-1302244" class=" mce-content-body" spellcheck="true" placeholder="Description"><p>Volunteer in Training and Placement cell&nbsp;</p>
+<p>NITRA Technical Campus</p></div></div></div><div class="clearfix"></div></article><article data-bind="contents" class=""><div class="col-sm-4 timetable-left marked"><div data-bind="organization_url" target="_blank" rel="nofollow"><h4 data-bind="organization" class="empty"><span class="undefined needsclick empty" contenteditable="false" data-placeholder="Organization"></span></h4></div><h5 class="date-range"><span data-bind="start_date" class="empty"><span class="undefined needsclick empty" contenteditable="false" data-placeholder="YYYY"></span></span><span data-bind="end_date" class="empty"><span class="undefined needsclick empty" contenteditable="false" data-placeholder="YYYY"></span></span></h5></div><div class="col-sm-8 timetable-right"><div class="article-body"><h4 data-bind="title" class="empty"><span class="undefined needsclick empty" contenteditable="false" data-placeholder="Title"></span></h4><div id="react-tinymce-1302246" class=" mce-content-body" spellcheck="true" placeholder="Description"></div></div></div><div class="clearfix"></div></article><article data-bind="contents" class=""><div class="col-sm-4 timetable-left marked"><div data-bind="organization_url" target="_blank" rel="nofollow"><h4 data-bind="organization"><span class="undefined needsclick" contenteditable="false" data-placeholder="Organization">NITRA Open Debate</span></h4></div><h5 class="date-range"><span data-bind="start_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2015</span></span><span data-bind="end_date" class="empty"><span class="undefined needsclick empty" contenteditable="false" data-placeholder="YYYY"></span></span></h5></div><div class="col-sm-8 timetable-right"><div class="article-body"><h4 data-bind="title"><span class="undefined needsclick" contenteditable="false" data-placeholder="Title">Student Coordinator </span></h4><div id="react-tinymce-1302248" class=" mce-content-body" spellcheck="true" placeholder="Description"></div></div></div><div class="clearfix"></div></article><article data-bind="contents" class=""><div class="col-sm-4 timetable-left marked"><div data-bind="organization_url" target="_blank" rel="nofollow"><h4 data-bind="organization"><span class="undefined needsclick" contenteditable="false" data-placeholder="Organization">School Level</span></h4></div><h5 class="date-range"><span data-bind="start_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2012</span></span><span data-bind="end_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2013-01</span></span></h5></div><div class="col-sm-8 timetable-right"><div class="article-body"><h4 data-bind="title"><span class="undefined needsclick" contenteditable="false" data-placeholder="Title">Ranked 1st in International cyber Olympiad</span></h4><div id="react-tinymce-1302250" class=" mce-content-body" spellcheck="true" placeholder="Description"></div></div></div><div class="clearfix"></div></article></section><section data-bind="sections" id="text_story_YN_7aeT9Ju" class="text_story"><div class="col-sm-4 timetable-left"></div><div class="col-sm-8 timetable-right"><header><h3 class="header-text" data-bind="label"><span class="undefined needsclick" contenteditable="false" data-placeholder="Text section">Personal Details</span></h3></header></div><article data-bind="content" class=""><div class="col-sm-4 timetable-left"></div><div class="col-sm-8 timetable-right"><div id="react-tinymce-1302252" class=" mce-content-body" spellcheck="true" placeholder="Description"><ul>
 <li><strong>Father&rsquo;s Name:</strong> Mr. Om Pal Singh</li>
 <li>Mother's Name: vimla</li>
 <li><strong>Date Of Birth:</strong> 17th July 1996.</li>
 <li><strong>Languages Known:</strong> English &amp; Hindi.</li>
 <li><strong>Nationality:</strong> Indian</li>
 <li><strong>Interest and Hobbies:</strong> Dancing, Athletics, Book Reading, Astronomy.</li>
-</ul></div></article></section><div data-bind="add-section-btn"><span class="undefined needsclick" contenteditable="false" data-placeholder="add-section-btn"></span></div></div></div></div></div></div>
+</ul></div></div><div class="clearfix"></div></article></section><section class="editor-visible"><div class="col-sm-4 timetable-left"></div><div class="col-sm-8 timetable-right"><div data-bind="add-section-btn"><span class="undefined needsclick" contenteditable="false" data-placeholder="add-section-btn"></span></div></div><div class="clearfix"></div></section><div class="clearfix"></div></div></div></div></div>
 
   <footer class="vcv-footer">
   <p>
-    <time class="updated-at" datetime="2018-02-16T21:49:55-08:00" pubdate="pubdate">
-      February 16, 2018
+    <time class="updated-at" datetime="2018-02-23T01:31:26-08:00" pubdate="pubdate">
+      February 23, 2018
 </time>  </p>
 </footer>
 
@@ -930,4 +983,3 @@
 </body>
 
 </html>
-
