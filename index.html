@@ -1,873 +1,196 @@
 
 <!DOCTYPE html>
-<html class="bg-stripped animated fadeIn" lang="en" dir="ltr">
+<html>
+  <head>
+    <title>VisualCV</title>
+    <meta charset="utf-8">
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"6387e82dbf","applicationID":"3081130","transactionName":"IV9dR0RcDghRRk4AEBEfQFtZRA==","queueTime":0,"applicationTime":59,"agent":""}</script>
-<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1118.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="/favicon.ico">
-
-  <title>Anjali Chaudhary - Ruby on Rails developer - VisualCV</title>
-  <base href="https://www.visualcv.com/app/">
-
-  <meta name="description" content="">
-  <meta name="author" content="VisualCV.com">
-  <meta name="robots" content="noarchive">
-
-  <link rel="canonical" href="https://www.visualcv.com/anjali-chaudhary/">
-  <link rel="alternate" hreflang="x-default" href="https://www.visualcv.com/anjali-chaudhary/"/>
-  <link rel="alternate" hreflang="en" href="https://www.visualcv.com/anjali-chaudhary/"/>
-
-  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <script src="js/vendor/es5-shim.min.js"></script>
-  <!--[if lt IE 9]>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-  <![endif]-->
-
-  <!-- Schema.org markup for Google+ -->
-  <meta itemprop="image" content="">
-
-  <!-- Twitter Card data -->
-  <meta name="twitter:card" content="photo" />
-  <meta name="twitter:site" content="@visualcv" />
-  <meta name="twitter:image" content="" />
-  <meta name="twitter:url" content="https://www.visualcv.com" />
-
-  <!-- Open Graph data -->
-  <meta property="og:image" content="" />
-
-  <!-- Google Tag Manager -->
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WKRGZV"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-WKRGZV');</script>
-<!-- End Google Tag Manager -->
-
-  <link rel="stylesheet" type="text/css" href="visualcv.css" />
-</head>
-<body data-cv-id="1589285" class="cv-viewer" >
-
-  <header class="row centered vcv-header">
-    <div class="col-md-6">
-          </div>
-    <div class="col-md-6 text-right">
-      <a class="btn btn-outline" id="pdf-download" target="_blank" rel="nofollow" href="/anjali-chaudhary/pdf/">
-        <i class="fa fa-print"></i>
-        Download PDF
-</a>    </div>
-  </header>
-
-  <style type="text/css">@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,700);
-.css-crop {
-  width: 100%;
-  height: 0;
-  padding-bottom: 50%;
-  background-repeat: no-repeat;
-}
-.css-crop.bg-cover {
-  background-size: cover;
-  /*-ms-behavior: url("/styles/backgroundsize.min.htc"); doesn't work on IE8-9...*/
-  background-position: center;
-}
-.css-crop.bg-contain {
-  background-size: contain;
-  background-position: center;
-}
-.clear-margin {
-  margin: 0;
-  padding: 0;
-}
-.full-width {
-  width: 100%;
-}
-.half-width {
-  width: 50%;
-}
-.clickable {
-  cursor: pointer;
-}
-.inline {
-  display: inline;
-}
-.inline-block {
-  display: inline-block !important;
-}
-.nomargin {
-  margin: 0px !important;
-}
-.nowrap {
-  white-space: nowrap;
-}
-.centered {
-  display: block;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-.first {
-  margin-top: 0px !important;
-}
-.last {
-  margin-bottom: 0px !important;
-}
-.ellipsis {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  display: block;
-}
-.mejs-overlay-button {
-  display: none;
-}
-[data-id=new] [data-field=title] {
-  display: none;
-}
-.cv-viewer p {
-  min-height: 1em;
-}
-.cv-viewer .vcv-header {
-  margin: 30px auto;
-  max-width: 1020px;
-  position: relative;
-}
-.cv-viewer .vcv-header #social-share {
-  text-align: right;
-  position: absolute;
-  left: -80px;
-  top: 80px;
-  z-index: 1050;
-  opacity: 0;
-}
-.cv-viewer .vcv-header #social-share .share-button {
-  min-height: 30px;
-}
-.cv-viewer .vcv-header #social-share .share-button.subtle {
-  opacity: 0.75;
-}
-.cv-viewer .vcv-header .banner-top {
-  padding-left: 90px;
-  position: relative;
-  margin-top: -10px;
-  margin-bottom: -30px;
-  z-index: 0;
-  opacity: 0.5;
-  display: inline-block;
-}
-.cv-viewer .vcv-header .banner-top:hover {
-  opacity: 0.8;
-  -webkit-transition-property: transform opacity;
-  -moz-transition-property: transform opacity;
-  transition-property: transform opacity;
-  -webkit-transition-duration: 0.5s;
-  -moz-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-}
-.cv-viewer .vcv-logo {
-  height: 40px;
-  display: block;
-  padding: 5px 0;
-}
-.cv-viewer .cv-container article .empty {
-  display: none !important;
-}
-.cv-viewer footer.vcv-footer {
-  margin-top: 100px;
-  color: #333;
-  text-align: center;
-}
-.cv-viewer footer .powered-by {
-  margin-top: 0px;
-}
-.cv-viewer footer .updated-at {
-  opacity: 0.5;
-}
-.cv-fullscreen {
-  position: relative;
-}
-.cv-fullscreen .powered-by a {
-  color: white;
-}
-.cv-fullscreen .vcv-header {
-  display: none;
-}
-.cv-fullscreen .vcv-footer {
-  width: 100%;
-  position: absolute;
-  bottom: 0px;
-  color: white;
-  margin-top: 50px;
-}
-.cv-fullscreen .vcv-footer .updated-at {
-  display: block;
-  margin-bottom: 1em;
-  opacity: 0.75;
-}
-.editor-visible {
-  display: none;
-}
-.cv-editor .cv-container {
-  margin: 0px auto 150px auto;
-}
-.cv-editor .cv-container .editor-visible {
-  display: block;
-}
-.cv-container,
-.cv-content {
-  opacity: 1 !important;
-}
-.cv-container {
-  display: block;
-  margin: 0px auto 10px auto;
-  min-height: 500px;
-  padding: 50px 6.5%;
-  max-width: 1020px;
-  background: white;
-  border-radius: 1px;
-  z-index: 10;
-}
-.cv-container .nowrap-list li {
-  white-space: nowrap;
-}
-.cv-container section {
-  position: relative;
-  word-wrap: break-word;
-}
-.cv-container article:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-.cv-container .main section:first-child .edit-section .sort-up,
-.cv-container .cv-content section:first-child .edit-section .sort-up {
-  display: none;
-}
-.cv-container .main section:last-of-type .edit-section .sort-down,
-.cv-container .cv-content section:last-of-type .edit-section .sort-down {
-  display: none;
-}
-.cv-container #profile .edit-section {
-  display: none;
-}
-.cv-container #references .date-range {
-  display: none !important;
-}
-.cv-container #references .article-body {
-  width: 100%;
-}
-.cv-container svg {
-  overflow: visible;
-}
-.cv-container table {
-  width: 100%;
-}
-.cv-container .morris-hover {
-  display: none !important;
-}
-.cv-container input[type=month] {
-  position: relative;
-  border: none;
-  max-width: 100%;
-  content: attr(placeholder);
-  display: inline-block;
-}
-.cv-container input[type=month]:before {
-  content: attr(placeholder);
-  position: absolute;
-}
-.cv-container .gallery .asset-thumb {
-  display: block;
-}
-.cv-container .asset label.empty {
-  display: block !important;
-}
-.cv-container .btn {
-  margin-bottom: 15px;
-}
-.cv-container .btn i.subtle {
-  opacity: 0.2;
-}
-.cv-container .btn i {
-  opacity: 0.5;
-}
-.cv-container .btn.btn-glass {
-  background-color: rgba(255, 255, 255, 0.15);
-  -webkit-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.05);
-  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: rgba(255, 255, 255, 0.7);
-}
-.cv-container a[href] {
-  color: #428bca;
-}
-.cv-container a[href] [data-bind=organization] {
-  color: #428bca;
-}
-.cv-container [data-bind=organization_url] {
-  display: block;
-}
-.cv-container [data-bind=end_date]:before {
-  content: ' - ';
-}
-.cv-container .add-section {
-  max-width: 850px;
-  margin: 0px auto;
-}
-.cv-container .cv-content:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-.cv-container .cv-content .user-thumb {
-  display: none;
-}
-.cv-container .cv-content .user-thumb.visible {
-  display: inherit;
-}
-.cv-container .asset-thumb {
-  position: relative;
-  cursor: pointer;
-  display: block;
-}
-.cv-container .asset-thumb .asset-overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0px;
-  left: 0px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 15%;
-  z-index: 100;
-  opacity: 0.5;
-}
-.cv-container .asset-thumb .asset-overlay:hover {
-  opacity: 0.75;
-}
-.cv-container .asset-thumb .asset-overlay.youtube {
-  background-image: url("/images/icons/play.png");
-}
-.cv-container .asset-thumb .asset-overlay img {
-  page-break-inside: avoid;
-}
-.cv-container .asset label.ellipsis > span {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  display: block;
-}
-@media (max-width: 992px) {
-  #social-share {
-    display: none;
-  }
-  .vcv-header a {
-    display: block;
-    margin-bottom: 15px;
-  }
-  .vcv-header .vcv-logo {
-    display: inline;
-  }
-  .vcv-header .btn {
-    width: 100%;
-  }
-}
-.pdf .cv-container .chart-container {
-  width: 850px;
-}
-.pdf .cv-container .cv-content {
-  padding: 0px;
-}
-.pdf .cv-container .portfolio .css-crop {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-.pdf .cv-container .user-thumb {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-.pdf body,
-.embed body {
-  background: white !important;
-}
-.pdf .container,
-.embed .container {
-  padding: 0px;
-  margin: 0px auto;
-  width: 100%;
-}
-.pdf .cv-container,
-.embed .cv-container {
-  padding: 0px !important;
-  margin-bottom: 0px !important;
-  max-width: 100% !important;
-  border: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-.pdf .cv-container section:last-of-type,
-.embed .cv-container section:last-of-type,
-.pdf .cv-container section:last-of-type article:last-of-type,
-.embed .cv-container section:last-of-type article:last-of-type,
-.pdf .cv-container section:last-of-type article:last-of-type,
-.embed .cv-container section:last-of-type article:last-of-type,
-.pdf .cv-container p:last-of-type,
-.embed .cv-container p:last-of-type,
-.pdf .cv-container .content-container,
-.embed .cv-container .content-container,
-.pdf .cv-container .cv-content,
-.embed .cv-container .cv-content {
-  margin-bottom: 0px !important;
-  padding-bottom: 0px !important;
-}
-.pdf .vcv-header,
-.embed .vcv-header,
-.pdf .vcv-footer,
-.embed .vcv-footer {
-  display: none;
-}
-.pdf header,
-.embed header,
-.pdf .header-text,
-.embed .header-text {
-  page-break-after: avoid;
-  page-break-inside: avoid;
-}
-.pdf .no-page-break,
-.embed .no-page-break,
-.pdf .css-crop,
-.embed .css-crop,
-.pdf pre,
-.embed pre,
-.pdf blockquote,
-.embed blockquote,
-.pdf img,
-.embed img,
-.pdf svg,
-.embed svg,
-.pdf .chart-graph,
-.embed .chart-graph,
-.pdf .chart-container,
-.embed .chart-container,
-.pdf .asset,
-.embed .asset {
-  page-break-inside: avoid;
-}
-.pdf .no-page-break p,
-.embed .no-page-break p {
-  page-break-inside: avoid;
-}
-.pdf .page-break,
-.embed .page-break {
-  page-break-before: always;
-}
-.pdf thead,
-.embed thead {
-  display: table-header-group;
-}
-.pdf p,
-.embed p {
-  orphans: 4;
-  widows: 4;
-}
-@page {
-  size: A4 portrait;
-}
-.cv-container {
-  font-family: "Source Sans Pro", "Open Sans", "Century Gothic", CenturyGothic, "Microsoft YaHei New", "Microsoft Yahei", "微软雅黑", 宋体, SimSun, 华文细黑, STXihei, 黑体, SimHei, sans-serif;
-  font-size: 16px;
-  background: white;
-  padding: 0px;
-}
-.cv-container .cv-content {
-  padding: 5em 8.5%;
-}
-.cv-container .cv-content.single-column {
-  padding: 5em 11.5%;
-}
-.cv-container .cv-content.single-column .sidebar {
-  display: none;
-}
-.cv-container .cv-content.single-column .main {
-  padding-right: 0;
-}
-.cv-container h1,
-.cv-container h2,
-.cv-container h3,
-.cv-container h4,
-.cv-container h5,
-.cv-container h6 {
-  margin-top: 0px;
-  margin-bottom: 0.25em;
-}
-.cv-container h1 {
-  font-weight: 700;
-  color: #555555;
-  font-size: 350%;
-  margin-bottom: 0px;
-}
-.cv-container h2 {
-  font-size: 175%;
-  font-weight: 300;
-  overflow: auto;
-}
-.cv-container h3 {
-  font-size: 150%;
-  font-weight: 600;
-  color: #555555;
-}
-.cv-container h4,
-.cv-container h5,
-.cv-container h6 {
-  font-size: 125%;
-  font-weight: 400;
-}
-.cv-container h6 {
-  color: #555555;
-}
-.cv-container .column-container {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-}
-.cv-container .main {
-  width: 70%;
-  padding-right: 3%;
-}
-.cv-container .sidebar {
-  width: 30%;
-}
-.cv-container .sidebar .article-headings,
-.cv-container .sidebar .article-body {
-  float: none !important;
-  width: 100% !important;
-}
-.cv-container #profile article:after {
-  content: '';
-  clear: both;
-}
-.cv-container article:after {
-  content: none;
-  clear: left;
-}
-.cv-container .main.col-sm-8 {
-  width: 70%;
-}
-.cv-container section {
-  position: relative;
-  margin-bottom: 2em;
-}
-.cv-container section .date-range {
-  float: right;
-  font-weight: 300;
-}
-.cv-container section header {
-  width: 100%;
-  margin-bottom: 2.25em;
-  text-align: left;
-}
-.cv-container section header .header-text {
-  padding: 0px 0.5em 0px 0px;
-  background: white;
-  text-align: center;
-  vertical-align: middle;
-  display: inline-block;
-  margin: 0em 2px 0px 0px;
-  z-index: 2;
-  position: relative;
-}
-.cv-container section header:after {
-  content: '';
-  display: block;
-  top: 1em;
-  border-bottom: 1px solid #dedede;
-  position: absolute;
-  left: 0;
-  right: 0;
-  width: 100%;
-  z-index: 0;
-}
-.cv-container article {
-  margin-bottom: 2em;
-}
-.cv-container article .article-headings.col-sm-3 {
-  width: 20%;
-  padding-right: 0px;
-}
-.cv-container article .article-body.col-sm-9 {
-  width: 80%;
-}
-.cv-container article .left-col {
-  padding-right: 0px;
-}
-.cv-container .user-thumb {
-  width: 15%;
-  float: right;
-  min-width: 100px;
-  margin-bottom: 1em;
-  border: 1px solid #202020;
-  -webkit-box-shadow: 1px 1px 3px 0px #cccccc;
-  box-shadow: 1px 1px 3px 0px #cccccc;
-}
-.cv-container .user-contact li,
-.cv-container .user-links li {
-  font-size: 95%;
-  margin-bottom: 0.25em;
-  overflow: visible;
-  white-space: nowrap;
-  display: inline-block;
-}
-.cv-container .user-links li {
-  margin-right: 0.5em;
-}
-.cv-container .user-contact li:before {
-  content: "|";
-  color: #cccccc;
-  margin: 0px 0.25em;
-}
-.cv-container .user-contact li:first-child:before {
-  content: initial;
-}
-@media (max-width: 768px) {
-  .cv-container .vcard {
-    text-align: center;
-  }
-  .cv-container .user-contact {
-    padding: 0px;
-  }
-  .cv-container .user-thumb {
-    position: relative;
-    margin: 1em auto !important;
-    display: block;
-    float: none !important;
-    width: auto;
-    max-width: 150px;
-  }
-}
-.cv-container .portfolio .row {
-  margin-left: -5px;
-  margin-right: -5px;
-}
-.cv-container .portfolio .col-sm-4 {
-  padding-left: 5px;
-  padding-right: 5px;
-}
-.cv-container .portfolio .asset .asset-description {
-  display: none;
-}
-.cv-container .portfolio label {
-  font-weight: 700;
-  margin-bottom: 5px;
-  margin-top: 5px;
-  min-height: 1.5em;
-}
-.cv-container .portfolio .css-crop {
-  width: 100%;
-  padding-bottom: 75%;
-  background-size: cover;
-  background-position: center center;
-  border: 1px solid #202020;
-  -webkit-box-shadow: 1px 1px 3px 0px #cccccc;
-  box-shadow: 1px 1px 3px 0px #cccccc;
-}
-.cv-container .portfolio a label {
-  cursor: pointer;
-}
-.cv-container .sidebar .portfolio .asset {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-.cv-container .sidebar .portfolio .css-crop {
-  border: 0px;
-  padding: 0px;
-  height: auto;
-  background-image: none !important;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-.cv-container .sidebar .portfolio .css-crop img {
-  display: block !important;
-}
-@media (min-width: 768px) {
-  .cv-container .sidebar .portfolio label {
-    text-align: left;
-  }
-  .cv-container .sidebar .portfolio .asset,
-  .cv-container .sidebar .portfolio .asset-thumb {
-    width: 100%;
-  }
-  .cv-container .sidebar .portfolio .asset-description {
-    display: block;
-  }
-}
-.cv-container .portfolio .row:after {
-  clear: left;
-}
-.cv-container .competency-list {
-  list-style: none;
-  width: 100%;
-  padding-left: 0.25em;
-}
-.cv-container .competency-list li {
-  height: 1em;
-  width: 8%;
-  margin-right: 2%;
-  background-color: #cccccc;
-  -webkit-transform: skewX(-30deg);
-  -ms-transform: skewX(-30deg);
-  -moz-transform-origin: skewX(-30deg);
-  -o-transform-origin: skewX(-30deg);
-  transform: skewX(-30deg);
-  display: inline-block;
-}
-.cv-container .competency-list li.filled {
-  background-color: #202020;
-}
-@media (max-width: 768px) {
-  .cv-container h1 {
-    font-size: 250%;
-    text-align: center;
-  }
-  .cv-container h2 {
-    font-size: 150%;
-    text-align: center;
-  }
-  .cv-container h3 {
-    font-size: 125%;
-  }
-  .cv-container h6.date-range {
-    text-align: left;
-    float: none;
-  }
-  .cv-container .summary-text {
-    padding: 0px;
-  }
-  .cv-container .main {
-    float: none;
-    width: 100% !important;
-    padding: 30px 0px 0px 0px;
-  }
-  .cv-container .sidebar {
-    float: none;
-    width: 100% !important;
-  }
-  .cv-container article .article-headings,
-  .cv-container article .article-body {
-    width: 100% !important;
-  }
-}
-.pdf .cv-container .chart-container {
-  width: 600px !important;
-}
-.pdf .cv-container .cv-content {
-  padding: 0px;
-}
-.pdf .cv-container .header-text:after {
-  padding-right: 0em;
-  content: " \00a0";
-}
-.pdf .cv-container .portfolio .css-crop {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-.pdf .cv-container .user-thumb {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-</style><div><link rel="stylesheet" type="text/css" href="https://www.visualcv.com/less/slate?%40body-font=source_sans_pro&amp;%40body-font-size=16px&amp;%40section-margins=2em&amp;%40article-margins=2em"/><div class="cv-container animated fadeIn "><div class="cv-content"><section id="profile" class="profile"><article class="vcard " data-bind="content"><img class="user-thumb photo" data-bind="thumb" src=""/><div class="fn user-title"><h1 class="full-name" data-bind="full_name"><span class="undefined needsclick" contenteditable="false" data-placeholder="Full name">Anjali Chaudhary</span></h1><h2 class="title empty" data-bind="headline"><span class="undefined needsclick empty" contenteditable="false" data-placeholder="Headline / current title"></span></h2></div><ul class="user-contact"><li class="adr locality empty" data-bind="location"><span class="undefined needsclick empty" contenteditable="false" data-placeholder="Location"></span></li><li class="phone" data-bind="phone"><span class="undefined needsclick" contenteditable="false" data-placeholder="Phone">+91-8860323425</span></li><li class="email" data-bind="email"><a href="/cdn-cgi/l/email-protection#61000f0b000d08025056585721060c00080d4f020e0c"><span class="__cf_email__" data-cfemail="b6d7d8dcd7dadfd587818f80f6d1dbd7dfda98d5d9db">[email&#160;protected]</span></a></li></ul><ul class="user-links user-websites" data-bind="websites"></ul></article></section><div class="column-container"><div class="main"><section data-bind="sections" id="dated_stories_v__NCahDLy" class="dated_story"><header><h3 class="header-text" data-bind="label"><span class="undefined needsclick" contenteditable="false" data-placeholder="Custom dated section">Work Experience</span></h3></header><article data-bind="contents" class=""><div class="article-headings"><h6 class="date-range"><span data-bind="start_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">June 2018</span></span><span data-bind="end_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">Present</span></span></h6></div><div class="article-body"><h4 data-bind="title"><span class="undefined needsclick" contenteditable="false" data-placeholder="Title">Software development engineer</span></h4><a data-bind="organization_url" target="_blank" rel="nofollow" href="http://www.goomo.com"><h5 data-bind="organization"><span class="undefined needsclick" contenteditable="false" data-placeholder="Organization">Goomo.com</span></h5></a><div id="react-tinymce-1966126" class=" mce-content-body" spellcheck="true" placeholder="Description"><p>Working as a full stack developer with Java and angular</p></div></div></article></section><section data-bind="sections" id="positions" class="dated_story"><header><h3 class="header-text" data-bind="label"><span class="undefined needsclick" contenteditable="false" data-placeholder="Work experience">Internship History</span></h3></header><article data-bind="contents" class=""><div class="article-headings"><h6 class="date-range"><span data-bind="start_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">28-06-2017</span></span><span data-bind="end_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">28-09-2017</span></span></h6></div><div class="article-body"><h4 data-bind="title"><span class="undefined needsclick" contenteditable="false" data-placeholder="Job title">Ruby on Rails developer</span></h4><a data-bind="organization_url" target="_blank" rel="nofollow" href="http://www.goomo.com"><h5 data-bind="organization"><span class="undefined needsclick" contenteditable="false" data-placeholder="Organization">Goomo.com</span></h5></a><div id="react-tinymce-1966128" class=" mce-content-body" spellcheck="true" placeholder="Description"><p>RoR developer&nbsp;</p>
-<p><span><span>Created Flights Dashboard (Back-End and Front-End)</span></span></p>
-<p><span><span><span><span>Made an API debugging tool for streamlining the process of debugging&nbsp;</span></span></span></span></p></div></div></article><article data-bind="contents" class=""><div class="article-headings"><h6 class="date-range"><span data-bind="start_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2016-06</span></span><span data-bind="end_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2016-07</span></span></h6></div><div class="article-body"><h4 data-bind="title"><span class="undefined needsclick" contenteditable="false" data-placeholder="Job title">Web developer </span></h4><div data-bind="organization_url" target="_blank" rel="nofollow"><h5 data-bind="organization"><span class="undefined needsclick" contenteditable="false" data-placeholder="Organization">ILMP technologies</span></h5></div><div id="react-tinymce-1966130" class=" mce-content-body" spellcheck="true" placeholder="Description"><p>Worked on Front-End of NetworC HR Portal&nbsp;</p></div></div></article></section><section data-bind="sections" id="degrees" class="dated_story"><header><h3 class="header-text" data-bind="label"><span class="undefined needsclick" contenteditable="false" data-placeholder="Education">ACADEMIC QUALIFICATION</span></h3></header><article data-bind="contents" class=""><div class="article-headings"><h6 class="date-range"><span data-bind="start_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2014-08</span></span><span data-bind="end_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2018-08</span></span></h6></div><div class="article-body"><h4 data-bind="title"><span class="undefined needsclick" contenteditable="false" data-placeholder="Degree name">Bachelor of Technology in Computer Science Engineering</span></h4><div data-bind="organization_url" target="_blank" rel="nofollow"><h5 data-bind="organization"><span class="undefined needsclick" contenteditable="false" data-placeholder="School name">NITRA Technical Campus, Dr. A.P.J. Abdul Kalam Technical University</span></h5></div><div id="react-tinymce-1966132" class=" mce-content-body" spellcheck="true" placeholder="Description"><ul>
-<li><strong>Result:</strong>&nbsp;80%</li>
-</ul></div></div></article><article data-bind="contents" class=""><div class="article-headings"><h6 class="date-range"><span data-bind="start_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2013</span></span><span data-bind="end_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2014</span></span></h6></div><div class="article-body"><h4 data-bind="title"><span class="undefined needsclick" contenteditable="false" data-placeholder="Degree name">Intermediate</span></h4><div data-bind="organization_url" target="_blank" rel="nofollow"><h5 data-bind="organization"><span class="undefined needsclick" contenteditable="false" data-placeholder="School name">ASSISI Convent Sr. Sec. School, NOIDA  </span></h5></div><div id="react-tinymce-1966134" class=" mce-content-body" spellcheck="true" placeholder="Description"><ul>
-<li><strong>Result:</strong>&nbsp;87%</li>
-</ul></div></div></article><article data-bind="contents" class=""><div class="article-headings"><h6 class="date-range"><span data-bind="start_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2011</span></span><span data-bind="end_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2012</span></span></h6></div><div class="article-body"><h4 data-bind="title"><span class="undefined needsclick" contenteditable="false" data-placeholder="Degree name">High School</span></h4><div data-bind="organization_url" target="_blank" rel="nofollow"><h5 data-bind="organization"><span class="undefined needsclick" contenteditable="false" data-placeholder="School name">ASSISI Convent Sr. Sec. School, NOIDA  </span></h5></div><div id="react-tinymce-1966136" class=" mce-content-body" spellcheck="true" placeholder="Description"><ul>
-<li><strong>Result:&nbsp;</strong>91%</li>
-</ul></div></div></article></section><section data-bind="sections" id="text_story_3ZB0ki6q8t" class="text_story"><header><h3 class="header-text" data-bind="label"><span class="undefined needsclick" contenteditable="false" data-placeholder="Text section">PROJECTS:</span></h3></header><article data-bind="content" class=""><div id="react-tinymce-1966138" class=" mce-content-body" spellcheck="true" placeholder="Description"><p><span><span><span></span></span></span>#1</p>
-<p><span><span>Stock market data analysis using Bollinger and k nearest neighbour technique.</span></span></p>
-<p><span><span>#2</span></span></p>
-<p>Participated in Smart India Hackathon 2018 as a team leader ,leading a team size of 6 members</p>
-<p>Project : Medical appointment system</p>
-<p>Worked on the database of the application using postgres SQL and backend function workflow.</p>
-<p>#3</p>
-<p><span><span>Working as a UI/UX tester for the upcoming mobile app CrypTrace.</span></span></p>
-<p>#4</p>
-<p>Participated in Smart India Hackathon 2017 as a team leader ,leading a team size of 6 members</p>
-<p>Project : Low cost asset Tracking System</p>
-<p>Worked on the database of the application using Mysql&nbsp;</p>
-<p>#5</p>
-<p>Participated in IT olympiad 2016-17</p>
-<p>Project: Automatic Rain Gauge system&nbsp;</p>
-<p>Project recognised as one among the top 8 projects</p></div></article></section><section data-bind="sections" id="dated_stories" class="dated_story page-break"><header><h3 class="header-text" data-bind="label"><span class="undefined needsclick" contenteditable="false" data-placeholder="Custom dated section">EXTRACURRICULAR ACTIVITIES </span></h3></header><article data-bind="contents" class=""><div class="article-headings"><h6 class="date-range"><span data-bind="start_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2017-01</span></span><span data-bind="end_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">Present</span></span></h6></div><div class="article-body"><h4 data-bind="title" class="empty"><span class="undefined needsclick empty" contenteditable="false" data-placeholder="Title"></span></h4><div data-bind="organization_url" target="_blank" rel="nofollow"><h5 data-bind="organization" class="empty"><span class="undefined needsclick empty" contenteditable="false" data-placeholder="Organization"></span></h5></div><div id="react-tinymce-1966140" class=" mce-content-body" spellcheck="true" placeholder="Description"><p>Volunteer for Digital Financial Literacy Campaign &nbsp;VISAKA</p></div></div></article><article data-bind="contents" class=""><div class="article-headings"><h6 class="date-range"><span data-bind="start_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2016-04</span></span><span data-bind="end_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2016-08</span></span></h6></div><div class="article-body"><h4 data-bind="title"><span class="undefined needsclick" contenteditable="false" data-placeholder="Title">Intrapreneurship</span></h4><div data-bind="organization_url" target="_blank" rel="nofollow"><h5 data-bind="organization"><span class="undefined needsclick" contenteditable="false" data-placeholder="Organization">Sharing Achievements and Rejuvinating Society(SARSO)</span></h5></div><div id="react-tinymce-1966142" class=" mce-content-body" spellcheck="true" placeholder="Description"><p>Youth outreach partner&nbsp;</p>
-<p>Managed a group size of 50 intrapreneurs as a leading simultaneously with the studies and earned commissions too .</p></div></div></article><article data-bind="contents" class=""><div class="article-headings"><h6 class="date-range"><span data-bind="start_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2016-09</span></span><span data-bind="end_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2017-01</span></span></h6></div><div class="article-body"><h4 data-bind="title"><span class="undefined needsclick" contenteditable="false" data-placeholder="Title">IT olympiad </span></h4><div data-bind="organization_url" target="_blank" rel="nofollow"><h5 data-bind="organization"><span class="undefined needsclick" contenteditable="false" data-placeholder="Organization">Rotary Club of Pune Pride</span></h5></div><div id="react-tinymce-1966144" class=" mce-content-body" spellcheck="true" placeholder="Description"><p>Participated in National level Information Technology(IT) Olympiad&nbsp;</p>
-<p>Round 1(Preliminary Test): Grade B</p>
-<p>Round 2(Test on Fundamentals): Grade A</p>
-<p>Round 3 : Qualified for Finale&nbsp;</p>
-<p>Finale : project among the top 8 .</p></div></div></article><article data-bind="contents" class=""><div class="article-headings"><h6 class="date-range"><span data-bind="start_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2015</span></span><span data-bind="end_date" class="empty"><span class="undefined needsclick empty" contenteditable="false" data-placeholder="YYYY"></span></span></h6></div><div class="article-body"><h4 data-bind="title"><span class="undefined needsclick" contenteditable="false" data-placeholder="Title">Participated</span></h4><div data-bind="organization_url" target="_blank" rel="nofollow"><h5 data-bind="organization"><span class="undefined needsclick" contenteditable="false" data-placeholder="Organization">Jaypee-Model United Nations </span></h5></div><div id="react-tinymce-1966146" class=" mce-content-body" spellcheck="true" placeholder="Description"><ul>
-<li><span> As Delegate of Bhutan in General Assembly</span></li>
-</ul></div></div></article><article data-bind="contents" class=""><div class="article-headings"><h6 class="date-range"><span data-bind="start_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2015</span></span><span data-bind="end_date" class="empty"><span class="undefined needsclick empty" contenteditable="false" data-placeholder="YYYY"></span></span></h6></div><div class="article-body"><h4 data-bind="title"><span class="undefined needsclick" contenteditable="false" data-placeholder="Title">Student Coordinator</span></h4><div data-bind="organization_url" target="_blank" rel="nofollow"><h5 data-bind="organization"><span class="undefined needsclick" contenteditable="false" data-placeholder="Organization">NITRA Technical Campus Sports Meet</span></h5></div><div id="react-tinymce-1966148" class=" mce-content-body" spellcheck="true" placeholder="Description"></div></div></article><article data-bind="contents" class=""><div class="article-headings"><h6 class="date-range"><span data-bind="start_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2015-04</span></span><span data-bind="end_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">Present</span></span></h6></div><div class="article-body"><h4 data-bind="title" class="empty"><span class="undefined needsclick empty" contenteditable="false" data-placeholder="Title"></span></h4><div data-bind="organization_url" target="_blank" rel="nofollow"><h5 data-bind="organization" class="empty"><span class="undefined needsclick empty" contenteditable="false" data-placeholder="Organization"></span></h5></div><div id="react-tinymce-1966150" class=" mce-content-body" spellcheck="true" placeholder="Description"><p>Volunteer in Training and Placement cell&nbsp;</p>
-<p>NITRA Technical Campus</p></div></div></article><article data-bind="contents" class=""><div class="article-headings"><h6 class="date-range"><span data-bind="start_date" class="empty"><span class="undefined needsclick empty" contenteditable="false" data-placeholder="YYYY"></span></span><span data-bind="end_date" class="empty"><span class="undefined needsclick empty" contenteditable="false" data-placeholder="YYYY"></span></span></h6></div><div class="article-body"><h4 data-bind="title" class="empty"><span class="undefined needsclick empty" contenteditable="false" data-placeholder="Title"></span></h4><div data-bind="organization_url" target="_blank" rel="nofollow"><h5 data-bind="organization" class="empty"><span class="undefined needsclick empty" contenteditable="false" data-placeholder="Organization"></span></h5></div><div id="react-tinymce-1966152" class=" mce-content-body" spellcheck="true" placeholder="Description"></div></div></article><article data-bind="contents" class=""><div class="article-headings"><h6 class="date-range"><span data-bind="start_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2015</span></span><span data-bind="end_date" class="empty"><span class="undefined needsclick empty" contenteditable="false" data-placeholder="YYYY"></span></span></h6></div><div class="article-body"><h4 data-bind="title"><span class="undefined needsclick" contenteditable="false" data-placeholder="Title">Student Coordinator </span></h4><div data-bind="organization_url" target="_blank" rel="nofollow"><h5 data-bind="organization"><span class="undefined needsclick" contenteditable="false" data-placeholder="Organization">NITRA Open Debate</span></h5></div><div id="react-tinymce-1966154" class=" mce-content-body" spellcheck="true" placeholder="Description"></div></div></article><article data-bind="contents" class=""><div class="article-headings"><h6 class="date-range"><span data-bind="start_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2012</span></span><span data-bind="end_date"><span class="undefined needsclick" contenteditable="false" data-placeholder="YYYY">2013-01</span></span></h6></div><div class="article-body"><h4 data-bind="title"><span class="undefined needsclick" contenteditable="false" data-placeholder="Title">Ranked 1st in International cyber Olympiad</span></h4><div data-bind="organization_url" target="_blank" rel="nofollow"><h5 data-bind="organization"><span class="undefined needsclick" contenteditable="false" data-placeholder="Organization">School Level</span></h5></div><div id="react-tinymce-1966156" class=" mce-content-body" spellcheck="true" placeholder="Description"></div></div></article></section><section data-bind="sections" id="text_story_YN_7aeT9Ju" class="text_story"><header><h3 class="header-text" data-bind="label"><span class="undefined needsclick" contenteditable="false" data-placeholder="Text section">Personal Details</span></h3></header><article data-bind="content" class=""><div id="react-tinymce-1966158" class=" mce-content-body" spellcheck="true" placeholder="Description"><ul>
-<li><strong>Father&rsquo;s Name:</strong> Mr. Om Pal Singh</li>
-<li>Mother's Name: vimla</li>
-<li><strong>Date Of Birth:</strong> 17th July 1996.</li>
-<li><strong>Languages Known:</strong> English &amp; Hindi.</li>
-<li><strong>Nationality:</strong> Indian</li>
-<li><strong>Interest and Hobbies:</strong> Dancing, Athletics, Book Reading, Astronomy.</li>
-</ul></div></article></section><div data-bind="add-section-btn"><span class="undefined needsclick" contenteditable="false" data-placeholder="add-section-btn"></span></div></div><div class="sidebar"><section data-bind="sidebar_sections" id="strengths" class="strengths page-break"><header><h3 class="header-text" data-bind="label"><span class="undefined needsclick" contenteditable="false" data-placeholder="Skills">TECHNICAL SKILLS </span></h3></header><article class="competency " data-bind="contents"><div class="article-headings"><h6 data-bind="name"><span class="undefined needsclick" contenteditable="false" data-placeholder="Name">Leadership Skill</span></h6></div><div class="article-body competency"><ul class="competency-list"><li class="filled"></li><li class="filled"></li><li class="filled"></li><li class="filled"></li><li class="filled"></li><li class="filled"></li><li class="filled"></li><li class="filled"></li><li class=""></li><li class=""></li></ul><div id="react-tinymce-1966160" class=" mce-content-body" spellcheck="true" placeholder="Description"><p>Lead a team of six members for a national level hackathon&nbsp;</p>
-<p>Has managed more than 50 intrapreneurs simultaneously with my studies.</p>
-<p>Has organised various events being the senior coordinator at college level&nbsp;</p></div></div></article><article class="competency " data-bind="contents"><div class="article-headings"><h6 data-bind="name"><span class="undefined needsclick" contenteditable="false" data-placeholder="Name">Language</span></h6></div><div class="article-body competency"><ul class="competency-list"><li class="filled"></li><li class="filled"></li><li class="filled"></li><li class="filled"></li><li class="filled"></li><li class="filled"></li><li class=""></li><li class=""></li><li class=""></li><li class=""></li></ul><div id="react-tinymce-1966162" class=" mce-content-body" spellcheck="true" placeholder="Description"><ul>
-<li><span><span><span>Java</span></span></span></li>
-<li><span>Ruby on Rails</span></li>
-<li><span><span><span>Postgres SQL&nbsp;</span></span></span></li>
-<li>Python</li>
-<li>C</li>
-<li>C++</li>
-<li>SQL</li>
-<li>HTML5/CSS3</li>
-<li>JavaScript</li>
-</ul></div></div></article><article class="competency " data-bind="contents"><div class="article-headings"><h6 data-bind="name"><span class="undefined needsclick" contenteditable="false" data-placeholder="Name">Tools</span></h6></div><div class="article-body competency"><ul class="competency-list"><li class="filled"></li><li class="filled"></li><li class="filled"></li><li class="filled"></li><li class="filled"></li><li class="filled"></li><li class="filled"></li><li class=""></li><li class=""></li><li class=""></li></ul><div id="react-tinymce-1966164" class=" mce-content-body" spellcheck="true" placeholder="Description"><ul>
-<li>Eclipse</li>
-<li><span><span><span><span>Jupyter notebook&nbsp;</span></span></span></span></li>
-<li><span><span>Pg admin&nbsp;</span></span></li>
-<li>Mysql Workbench</li>
-<li>Turbo C++</li>
-<li>MS Office</li>
-<li>Webstorm</li>
-<li>Brackets</li>
-</ul></div></div></article><article class="competency " data-bind="contents"><div class="article-headings"><h6 data-bind="name"><span class="undefined needsclick" contenteditable="false" data-placeholder="Name">Operating System</span></h6></div><div class="article-body competency"><ul class="competency-list"><li class="filled"></li><li class="filled"></li><li class="filled"></li><li class="filled"></li><li class="filled"></li><li class="filled"></li><li class="filled"></li><li class="filled"></li><li class="filled"></li><li class="filled"></li></ul><div id="react-tinymce-1966166" class=" mce-content-body" spellcheck="true" placeholder="Description"><ul>
-<li>Linux</li>
-<li>Windows</li>
-</ul></div></div></article></section><section data-bind="sidebar_sections" id="text_story" class="text_story"><header><h3 class="header-text" data-bind="label"><span class="undefined needsclick" contenteditable="false" data-placeholder="Text section">Area Of Interest</span></h3></header><article data-bind="content" class=""><div id="react-tinymce-1966168" class=" mce-content-body" spellcheck="true" placeholder="Description"><p></p>
-<ul>
-<li>Algorithms</li>
-<li><span><span>Data science</span></span></li>
-<li>Artificial Intelligence</li>
-<li>Machine Learning</li>
-<li>Database Design</li>
-<li><span></span>Graphics&nbsp;<span></span></li>
-</ul></div></article></section><div data-bind="add-sidebar-section-btn"><span class="undefined needsclick" contenteditable="false" data-placeholder="add-sidebar-section-btn"></span></div></div></div></div></div></div>
-
-  <footer class="vcv-footer">
-  <p>
-    <time datetime="2019-01-21T21:30:45-08:00" pubdate="pubdate" class="updated-at">
-      January 21, 2019
-</time>  </p>
-</footer>
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1, viewport-fit=cover">
+    <meta name="robots" content="noindex">
+    <link rel="shortcut icon" type="image/x-icon" href="/app/build/assets/images/favicon.8aedeeab10dd06774df15f4da0cb4b98.ico">
+    <link rel="canonical" href="https://www.visualcv.com/app/">
 
 
-  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" />
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
-  <script src="js/lib/jquery.cv.js" ></script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WKRGZV');</script>
+    <!-- End Google Tag Manager -->
 
-</body>
 
+    <style>
+      body {
+        height: 100vh;
+        margin: 0;
+        padding: constant(safe-area-inset-top) constant(safe-area-inset-right) constant(safe-area-inset-bottom) constant(safe-area-inset-left); /* iOS 11.0 */
+        padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left); /* iOS 11.2 */
+      }
+
+      #loading-overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        -webkit-transition: opacity 0.1s;
+        transition: opacity 0.1s;
+        text-align: center;
+        z-index: 1000;
+        opacity: 1;
+      }
+
+      #loading-logo {
+        max-width: 640px;
+        padding: 0 20px;
+      }
+
+      #loading-logo-svg {
+        vertical-align: middle;
+
+        height: 80px;
+        width: 89px;
+      }
+
+      #loading-quote {
+        color: #222;
+        font-family: 'Avenir', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        margin: 24px 0;
+      }
+
+      #loading-quote-author {
+        color: #999;
+        font-family: 'Avenir', sans-serif;
+
+        margin: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WKRGZV"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+
+    <div id="loading-overlay">
+      <div id="loading-logo">
+        <svg viewBox="0 0 189.8 170" id="loading-logo-svg">
+          <g fill="#3e94e4">
+            <path d="m23.1 46.3c-12.8 0-23.1-10.4-23.1-23.2 0-12.7 10.3-23.1 23.1-23.1h71.8c12.8 0 23.1 10.4 23.1 23.1 0 12.8-10.4 23.1-23.1 23.1h-71.8z"/>
+            <path d="m71.6 146.8c0-12.8 10.3-23.1 23.1-23.1s23.1 10.3 23.1 23.1-10.4 23.2-23.1 23.2-23.1-10.4-23.1-23.2z"/>
+            <path d="m130.7 61.9c12.8 0 23.1 10.4 23.1 23.1 0 12.8-10.3 23.1-23.1 23.1h-72.1c-12.8 0-23.1-10.3-23.1-23.1s10.4-23.1 23.1-23.1z"/>
+            <path d="m153.8 85c0 12.8-10.3 23.1-23.1 23.1s-23.1-10.3-23.1-23.1 10.4-23.1 23.1-23.1c12.8 0 23.1 10.3 23.1 23.1z"/>
+            <path d="m81.8 85c0 12.8-10.3 23.1-23.1 23.1s-23.1-10.3-23.1-23.1 10.4-23.1 23.1-23.1 23.1 10.3 23.1 23.1z"/>
+            <path d="m0 23.1c0-12.7 10.3-23.1 23.1-23.1s23.1 10.4 23.1 23.1c0 12.8-10.4 23.1-23.1 23.1-12.8.1-23.1-10.3-23.1-23.1z"/>
+            <path d="m94.9 46.3c-12.8 0-23.1-10.4-23.1-23.1 0-12.8 10.3-23.2 23.1-23.2h71.8c12.8 0 23.1 10.4 23.1 23.1 0 12.8-10.4 23.1-23.1 23.1h-71.8z"/>
+            <path d="m189.8 23.1c0 12.8-10.3 23.1-23.1 23.1s-23.1-10.4-23.1-23.1 10.4-23.1 23.1-23.1c12.8 0 23.1 10.4 23.1 23.1z"/>
+            <path d="m118 23.1c0 12.8-10.3 23.1-23.1 23.1s-23.1-10.4-23.1-23.1 10.4-23.1 23.1-23.1c12.8 0 23.1 10.4 23.1 23.1z"/>
+          </g>
+        </svg>
+        <p id="loading-quote"></p>
+        <p id="loading-quote-author"></p>
+      </div>
+
+      <!--[if lte IE 11]>
+        <h2 class="text-center">
+          Looks like you are using an older browser,<br>
+          please update your browser to the latest version of Chrome, Safari, Firefox or Microsoft Edge.
+        </h2>
+      <![endif]-->
+    </div>
+
+    <div id="modalRoot"></div>
+    <div id="app"></div>
+
+    <script>
+      (function(){
+        var quoteEl = document.getElementById('loading-quote')
+        var quoteAuthorEl = document.getElementById('loading-quote-author')
+
+        var quotes = [
+          ['You look like a million bucks today.', 'VisualCV Team'],
+          ['Make yourself proud.', 'VisualCV Team'],
+
+          ['Choose courage over comfort.', 'Brene Brown'],
+          ['Sometimes the most important and bravest thing you can do is just show up.', 'Brene Brown'],
+
+          ['What would you do if you weren’t afraid?', 'Sheryl Sandberg'],
+          ['If you’re offered a seat on a rocket ship, don’t ask what seat. Just get on.', 'Sheryl Sandberg'],
+          ['Careers are a jungle gym, not a ladder.', 'Sheryl Sandberg'],
+
+          ['How you climb a mountain is more important than reaching the top.', 'Yvon Chouinard'],
+          ['If everything seems under control, you’re not going fast enough.', 'Mario Andretti'],
+          ['Dude, suckin’ at something is the first step to being sorta good at something.', 'Jake the adventure dog'],
+          ['Seize any opportunity, or anything that looks like opportunity. They are rare, much rarer than you think…', 'Nassim Nicholas Taleb'],
+          ['Passion is the result of action, not the cause of it.', 'Mark Manson'],
+          ['Today’s the youngest you’ll ever be. Live like it.', 'Mark Cuban'],
+          ['Decide who you are and be that person. The universe will get out of your way.', 'Will Smith'],
+          ['People often say motivation doesn’t last. Neither does bathing—that’s why we recommend it daily.', 'Zig Ziglar'],
+          ['Oh, get a job? Just get a job? Why don’t I strap on my job helmet and squeeze down into a job cannon and fire off into job land, where jobs grow on jobbies?!', 'Charlie Day'],
+          ['In the middle of every difficulty lies opportunity.', 'Albert Einstein'],
+          ['It’s not the mountain we conquer, but ourselves.', 'Edmund Hillary'],
+          ['You are never too old to set a new goal or dream a new dream.', 'CS Lewis'],
+          ['Life is not about finding yourself, it’s about creating yourself.', 'George Bernard Shaw']
+        ]
+
+        var quote = quotes[Math.floor(Math.random() * quotes.length)]
+
+        quoteEl.textContent = '“' + quote[0] + '”'
+        quoteAuthorEl.textContent = quote[1]
+      }());
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/5.7.0/tinymce.min.js" integrity="sha512-XaygRY58e7fVVWydN6jQsLpLMyf7qb4cKZjIi93WbKjT6+kG/x4H5Q73Tff69trL9K0YDPIswzWe6hkcyuOHlw==" crossorigin="anonymous"></script>
+    <script src="https://js.recurly.com/v4/recurly.js"></script>
+
+
+    <script src="/app/build/app.597ee6f49ea7181f3d2b.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="/app/jquery.cv.js"></script>
+
+
+    <link rel="preload" as="style" href="/app/build/500.b865518f3be1e559a5ee8b3e9b0c213b.css">
+
+    <link rel="preload" as="style" href="/app/build/600.6a97b5304af36d1fc1b2099f834c9aa6.css">
+
+    <link rel="preload" as="style" href="/app/build/700.aeb9bbe2ae6f26088fb9622050066d4f.css">
+
+    <link rel="preload" as="style" href="/app/build/variable.587274439cbbe02f603219e71091e11a.css">
+
+    <link rel="preload" as="style" href="/app/build/300.d8b648809e2e027fe703cc818fc3ff2e.css">
+
+    <link rel="preload" as="style" href="/app/build/400.27b6476444b1b08afbe13e6fff4531d4.css">
+
+    <link rel="preload" as="style" href="/app/build/500.1f6694c91930b666624d4a5902ffcb17.css">
+
+    <link rel="preload" as="style" href="/app/build/600.9d12dd8abf3cd96a10ea969a26ac48c1.css">
+
+    <link rel="preload" as="style" href="/app/build/variable.29dfd67013c7f64619d0752a3e143483.css">
+
+    <link rel="preload" as="style" href="/app/visualcv.css">
+
+    <link rel="preload" as="style" href="/app/build/Calendar.267222d8fbc24e36ae9641363169f5d6.css">
+
+    <link rel="preload" as="style" href="/app/build/DatePicker.d99612e823237776198c9d341aa0b160.css">
+
+    <link rel="preload" as="style" href="/app/build/ReactToastify.240d5f4d2e4bc78fff1896fc30c4b76e.css">
+
+    <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+  </body>
 </html>
